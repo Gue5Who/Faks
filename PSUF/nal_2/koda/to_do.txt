@@ -1,0 +1,91 @@
+🧩 What you need to do (step-by-step)
+1️⃣ Explore the dataset
+
+Load a few spectra using numpy.loadtxt (like in the PDF).
+
+Plot them (matplotlib) vs. wavelength.
+
+Identify a few spectra that look very different — visually or using a metric (e.g. Euclidean distance from mean).
+
+These will be your “reference examples” later.
+
+2️⃣ Implement PCA manually
+
+Write your own PCA code:
+
+Center the data by subtracting the mean of each wavelength bin.
+
+Compute covariance matrix.
+
+Get eigenvalues and eigenvectors.
+
+Sort by descending eigenvalue.
+
+Project data into q dimensions.
+
+Attach this code as plain text in your final report.
+
+3️⃣ Visualize PCA results
+
+Plot the spectra projected into the first 2 or 3 PCA components.
+
+Mark the previously identified “outlier” spectra in this projection.
+
+Optionally color points by physical parameters (Teff, [M/H], log g).
+
+4️⃣ Determine dimensionality
+
+Compute cumulative variance explained by eigenvalues.
+
+Plot variance fraction vs. number of components.
+
+Find how many components explain ≥90% of total variance.
+
+Discuss what physical quantity (temperature, metallicity, etc.) drives the main variance.
+
+5️⃣ Analyze structure in PCA space
+
+Check whether clusters correspond to specific types (MAB, BIN, etc.).
+
+Describe any patterns (e.g. high-Teff stars cluster together).
+
+6️⃣ Try kernel PCA (optional comparison)
+
+Use sklearn.decomposition.KernelPCA.
+
+Compare its separation ability to your manual PCA.
+
+7️⃣ Apply t-SNE
+
+Use sklearn.manifold.TSNE.
+
+Reduce to 2D.
+
+Vary parameters (perplexity, learning_rate, n_iter) and note how clustering changes.
+
+Visualize results — each point = one spectrum.
+
+Identify groups that match your reference spectra.
+
+8️⃣ Identify new groups
+
+Find any “extra” clusters that don’t match given categories.
+
+Try to interpret them physically (e.g. emission strength, double lines, broadened Hα).
+
+9️⃣ Special analysis – emission-line stars
+
+Run t-SNE excluding the wavelength region around Hα (≈6555–6575 Å).
+
+See how emission stars (HAE) behave — do they still form distinct clusters?
+
+🔟 Optional (+ bonus)
+
+Use DBSCAN to automatically find clusters in the 2D t-SNE projection.
+
+Try different parameters:
+eps (cluster radius) and min_samples (minimum cluster size).
+
+Assign cluster names (not numbers).
+
+Save a classification file for all spectra:
