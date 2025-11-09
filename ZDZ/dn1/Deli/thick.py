@@ -76,7 +76,7 @@ orbits_thick = [
 
 # --- Integrate orbits ---
 for o in orbits_thick:
-    o.integrate(ts, pot, method='leapfrog')
+    o.integrate(ts, pot, method='symplec4_c')
 
 # Helper functions to handle both unitful and unitless outputs
 def safe_val(val, scale=1.0):

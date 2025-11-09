@@ -77,7 +77,7 @@ orbits_halo = [
 ]
 
 for o in orbits_halo:
-    o.integrate(ts, pot, method='leapfrog')
+    o.integrate(ts, pot, method='symplec4_c')
 
 print(f"✅ Integrated {N} halo orbits for {t_end}.")
 

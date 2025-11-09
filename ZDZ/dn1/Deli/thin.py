@@ -78,7 +78,7 @@ orbits_thin = [
 
 # --- Integrate orbits ---
 for o in orbits_thin:
-    o.integrate(ts, pot, method='leapfrog')
+    o.integrate(ts, pot, method='symplec4_c')
 
 print(f"✅ Integrated {N} thin disk orbits for {t_end}.")
 

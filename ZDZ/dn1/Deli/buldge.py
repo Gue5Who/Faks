@@ -75,7 +75,7 @@ orbits_bulge = [
 ]
 
 for o in orbits_bulge:
-    o.integrate(ts, pot, method='leapfrog')
+    o.integrate(ts, pot, method='symplec4_c')
 
 print(f"✅ Integrated {N} bulge orbits for {t_end}.")
 
