@@ -100,6 +100,8 @@ plt.ylabel("Napaka (MSE)")
 plt.title("Vpliv števila časovnih točk na potek učenja")
 plt.grid(True)
 plt.tight_layout()
+plt.ylim(0, 0.002)
+plt.legend()
 
 os.makedirs("figs", exist_ok=True)
 plt.savefig(os.path.join("figs", "time_resolution_comparison.pdf"), format="pdf")
