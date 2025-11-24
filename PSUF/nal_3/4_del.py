@@ -131,6 +131,10 @@ history = best_model.fit(
 )
 
 
+#Best score: -0.025312219560146332
+#Best params: {'batch_size': 64, 'epochs': 60, 'model__activation': 'relu', 'model__lr': 0.001, 'model__momentum': 0.9, 'model__optimizer_name': 'adam'}
+
+
 # ============================================================
 # 9) PLOT TRAINING HISTORY
 # ============================================================
