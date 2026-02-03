@@ -1,0 +1,3 @@
+RVSpecFit: Radial velocity and stellar atmospheric parameter fitting
+https://ui.adsabs.harvard.edu/abs/2019ascl.soft07013K/abstract
+
