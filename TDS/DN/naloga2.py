@@ -206,7 +206,7 @@ def plot_colored(xs, ps, p0s, k, x0, out_prefix="portrait", save=True):
     plt.close(fig)
 
 def main():
-    x0 = 0.6122448979591836
+    x0 = 0.73
     p0s = np.linspace(0, 10, 100)
 
     # Increase n_periods for denser/clearer islands (like colleague).
