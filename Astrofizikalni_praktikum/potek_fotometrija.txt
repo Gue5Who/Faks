@@ -1,1 +1,23 @@
- 
+Fotometrija z IRAF
+
+epar zerocombine, pazi na input bias* output masterbias
+
+epar darkcombine, input dark* output masterdark
+
+epar flatcombine, input flat* output masterflat (process, subset, delete, clobber vse na No)
+
+Naredi file vseh posnetkov ali neko listo posnetkov katere zelimo obdelati
+
+epar ccdproc input naša lista (če je file je @"ime file-a") output lista z neko koncnico (npr -o da vemo da je obdelano),  vse ne razen zerocor, darkcor, flatcor
+
+Na sliki odcitaj priblizo velikost zvezde (FWHM) da lahko za fotometrijo določis aperaturo ki jo bo gledal (display posnetek, imexam, R pokaze graf z gausovko od zvezde, M pove nekaj o ozadju, Q je za to da gres ven)
+
+epar daofind podamo not en posnetek (lahko več ampak ni potrebno) output je po defaultu "ime posnetka.coo"
+- v datapars spremenimo parametre: scale, FWHM, sigma (tudi iz posnetka določimo), exposure (iz headerja), egain (iz headerja), readnoise (podamo na 1.0 če nevem se da izmeriti iz bias posnetkov), filter (ni obvezno), obstime (iz headerja, ponavadi JD)
+- v findpars: treshhold spremeni (Lahko zacnes z 10.0, prvo preveris koliko zvezd ti vzame, nočeš oreveč ampak tudi ne premalo)
+
+Če hočeš pogledati izbrane zvezde, lahko display in epar tvmark not podas tvoj coo file
+
+epar phot:  interactive (daj na No nočemo vsakega posnetka pogledati), input spet naš seznam obdelanih zvezd (npr. @all-o.txt), coords (en coo file), editaj centerpars (cbox nekje 10 pixlov), editaj fitskypars (annulus recimo dva pixla več od tistega kroga kje ni več signala od zvezde (to dobis tam pri imexam), dannulus sirina tega kroga recimo 5), editamo photpars (apertures radij tega notranjega kroga kje je ves signal zvezde (imexam))
+
+Potem imaš ukaz iz noao/digiphot/apphot epar pdump das notri file in količine kere ščeš meti ekstrahirane
