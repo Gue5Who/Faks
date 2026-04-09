@@ -10,7 +10,7 @@ iraf.digiphot()
 iraf.apphot()
 iraf.ptools() # za pdump
 
-def izvedi_fotometrijo(vhodna_mapa, izhodna_mapa, fwhm=4.0, threshold=10.0, cbox=10.0, annulus=15.0, dannulus=5.0, apertures=8.0, ref_id=None, maxshift = 100):
+def izvedi_fotometrijo(vhodna_mapa, izhodna_mapa, fwhm=4.0, threshold=10.0, cbox=10.0, annulus=15.0, dannulus=5.0, apertures=8.0, ref_id=None, maxshift = 100, koordinate_zvezd=None):
     """
     Skripta za avtomatizacijo fotometrije z uporabo PyRAF.
     
@@ -106,7 +106,10 @@ def izvedi_fotometrijo(vhodna_mapa, izhodna_mapa, fwhm=4.0, threshold=10.0, cbox
     iraf.ccdproc(images="@" + lista_surovih, output="@" + lista_obdelanih,
                  ccdtype="",
                  noproc="no",
-                 fixpix="no", overscan="no", trim="no",
+                 fixpix="yes",                  # <--- Vklopi
+                 fixfile="badpix.txt",          # <--- Dodaj pot do tekstovne datoteke,
+                 overscan = 'no',
+                 trim="no",
                  zerocor="yes",
                  darkcor="yes",
                  flatcor="yes",
@@ -136,25 +139,34 @@ def izvedi_fotometrijo(vhodna_mapa, izhodna_mapa, fwhm=4.0, threshold=10.0, cbox
     if os.path.exists(coo_file):
         os.remove(coo_file)
         
-    # Nastavljanje parametrov daofind (datapars, findpars)
+    # Skupni parametri za daofind in phot
     iraf.datapars.fwhmpsf = fwhm
-    iraf.datapars.sigma = 4.0 # Ocena šuma ozadja (fajn spremeniti glede na posnetek)
-    iraf.datapars.readnoi = 1.0 # Read noise (če ni znani daj 1)
+    iraf.datapars.sigma = 4.0 # Ocena šuma ozadja
+    iraf.datapars.readnoi = 1.0 # Read noise
     iraf.datapars.gain = "EGAIN" # e-/ADU gain
     iraf.datapars.epadu = 0.779999971389771 # e-/ADU gain
+    #iraf.datapars.datamax = 64000.0 # Zelo pomembno: ignoriraj vroče piksle in saturacijo!
+    
     # exposure, filter, obstime se preberejo iz headerja
-    # 
-    # PREVERI HEADERJE
     iraf.datapars.exposure = "EXPOSURE" 
     iraf.datapars.airmass = "AIRMASS"
     iraf.datapars.filter = "FILTER"
     iraf.datapars.obstime = "MJD-OBS"
-     
-    iraf.findpars.threshold = threshold
-    
-    print(f"Iščem zvezde na referenčnem posnetku: {referencni_posnetek}")
-    iraf.daofind(image=referencni_posnetek, output=coo_file,
-                 interactive="no", verify="no")
+
+    # Če imamo ob zagonu podane ročne koordinate (seznam ni prazen/None), preskoči daofind
+    if koordinate_zvezd:
+        print("\n--- Zapisujem ročne koordinate zvezd (brez daofind) ---")
+        with open(coo_file, "w") as f:
+            for i, (x, y) in enumerate(koordinate_zvezd):
+                # ID zvezde dodamo preprosto na koncu
+                f.write(f"{x} {y} {i+1}\n")
+        print(f"Zapisane {len(koordinate_zvezd)} zvezde v {coo_file}")
+    else:
+        iraf.findpars.threshold = threshold
+        
+        print(f"Iščem zvezde na referenčnem posnetku: {referencni_posnetek}")
+        iraf.daofind(image=referencni_posnetek, output=coo_file,
+                     interactive="no", verify="no")
 
     # 4. Fotometrija (phot)
     print("\n--- Fotometrija (phot) ---")
@@ -208,14 +220,21 @@ if __name__ == "__main__":
     mapa_rezultatov = "Obdelani_podatki"
     
     # parametri iz tvojega predogleda (imexam)
-    fwhm = 15          # FWHM zvezde
-    threshold = 50.0    # prag v daofind
-    cbox = 45.0         # širina okvirčka za centriranje = cbox
+    fwhm = 10.6        # FWHM zvezde
+    threshold = 10.0    # prag v daofind
+    cbox = 50.0         # MORA biti ogromen (okoli 50), ker teleskop močno 'drifta'! (npr. do 80 pikslov)
     maxshift = 100      # za koliko se premakne
-    annulus = 16.0      # začetek obroča ozadja (nekaj več kot fwhm, npr r+2)
-    dannulus = 5.0      # širina obroča ozadja
-    apertures = 15.0     # radij notranjega kroga (apertura zvezde)
+    annulus = 30.0      # začetek obroča ozadja (nekaj več kot fwhm, npr r+2)
+    dannulus = 6.0      # širina obroča ozadja
+    apertures = 25.0     # radij notranjega kroga (apertura zvezde)
     ref_id = "0516"       # Ime ali številka referenčnega posnetka (npr. "001"). Če želiš kr prvega, nastavi na None.
+    
+    # Tukaj vpiši približne (x, y) koordinate tarč, če jih imaš (npr. iz programa ds9).
+    # Če pustiš seznam prazen (koordinate_zvezd = []), bo skripta uporabila daofind po celi sliki.
+    koordinate_zvezd = [ (644,505), (466,99)
+        # (466.45, 99.67),   # Primer: odstrani '#' na začetku in vstavi koordinate za 1. zvezdo
+        # (644.84, 505.02)   # Primer: odstrani '#' na začetku in vstavi koordinate za 2. zvezdo
+    ]
     
     print("Začetek skripte...")
     
@@ -229,5 +248,6 @@ if __name__ == "__main__":
         annulus=annulus,
         dannulus=dannulus,
         apertures=apertures,
-        ref_id=ref_id
+        ref_id=ref_id,
+        koordinate_zvezd=koordinate_zvezd
     )
