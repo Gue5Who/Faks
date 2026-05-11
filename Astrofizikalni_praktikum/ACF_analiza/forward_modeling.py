@@ -82,8 +82,14 @@ valid_data = mira_df.dropna(subset=['DIFF_MAG']).copy()
 t_sec = (valid_data['URE'] - valid_data['URE'].iloc[0]).dt.total_seconds().values
 mag = valid_data['DIFF_MAG'].values
 
-# Za ACF moramo signal centrirati okoli 0 (odštejemo povprečje)
-mag_anom = mag - np.mean(mag)
+# Za ACF moramo signal centrirati okoli 0 (odštejemo povprečje in trend ki je linearen)
+mag_anom = signal.detrend(mag, type='linear')
+
+
+# odstranitev kvadratnega trenda (uporaba numpy)
+koeficienti = np.polyfit(t_sec, mag, 2)     # Poiščemo najboljšo parabolo (polinom 2. stopnje)
+trend = np.polyval(koeficienti, t_sec)      # Izračunamo vrednosti parabole za vse čase
+mag_anom = mag - trend                      # Odštejemo parabolo od originalnega signala
 
 # 2. Izračun Avtokorelacijske funkcije (ACF)
 # Uporabimo numpy.correlate. 'full' vrne korelacije za vse možne zamike
