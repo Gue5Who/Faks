@@ -1,0 +1,55 @@
+1. K-means algoritem na sintetičnih podatkih
+
+Implementiraj svoj K-means algoritem (upoštevaj postopek iz navodil).
+
+Testiraj ga na datoteki gauss.npy (400 delcev, vsak ima 2 parametra).
+
+Iz najdenih gruč določi povprečne vrednosti in standardne odklone obeh Gaussovih porazdelitev.
+
+Primerjaj rezultate z metodo Gaussian Mixture Model (GMM) iz knjižnice sklearn.
+
+⚠️ Dodatek s prosojnic (str. 9): Poleg GMM preizkusi še tri poljubne algoritme gručenja iz knjižnice scikit-learn po lastni izbiri.
+
+2. K-means na realnih podatkih (Higgsov bozon)
+
+Uporabi svoj K-means algoritem na prvem dogodku iz datoteke h_bb_sorted.npy.
+
+Pomembno: Upoštevaj periodične robne pogoje za kot ϕ (geometrija jeR × S1, zato pazi, kako računaš razdalje med koti).
+
+Preizkusi različno število centroidov (K).
+
+Poišči dve gruči z največjo transverzalno gibalno količino (pT).
+
+Izračunaj maso Higgsovega bozona (mh) po formuli z uporabo približka E ≈ |p| (pričakovana vrednost je okoli 125 GeV).
+
+3. Test infrardeče (IR) varnosti K-means algoritma
+
+Preveri infrardečo varnost svojega K-means algoritma na prvem dogodku.
+
+Postopek: Postopoma odstranjuj delce z najmanjšim pT in opazuj ter nariši graf, kako se rekonstruirana masa Higgsovega bozona spreminja glede na število preostalih delcev v dogodku.
+
+4. Implementacija hierarhičnega gručenja
+
+Implementiraj algoritem hierarhičnega gručenja (postopek v 5 korakih je opisan na straneh 3 in 4 v PDF-ju).
+
+Preizkusi ga na prvem dogodku.
+
+Izračunaj maso Higgsovega bozona za vse tri vrednosti parametra p ∈ {−1, 0, 1} (algoritmi: anti-k_t, Cambridge-Aachen, k_t) pri fiksnem radiju R = 0,6.
+
+Analiziraj in zapiši, kaj se zgodi, če parameter R povečaš ali zmanjšaš.
+
+5. in 6. Primerjava s knjižnico pyjet (IR varnost in časovna zahtevnost)
+
+Tvoja implementacija hierarhičnega gručenja bo verjetno počasna, zato boš algoritme primerjal z optimizirano knjižnico pyjet. Za to primerjavo izberi algoritem kt (p = 1).
+
+5. naloga (IR varnost): Izvedi test infrardeče varnosti (podobno kot pri K-means) za svoj implementirani algoritem in algoritem iz pyjet ter ju primerjaj.
+
+6. naloga (čas izvajanja): Izmeri čas izvajanja obeh algoritmov in nariši odvisnost časa izvajanja od števila delcev v logaritemski skali.
+
+7. Obdelava celotne množice podatkov
+
+Uporabi optimiziran algoritem iz knjižnice pyjet (p = 1) na vseh dogodkih (10.000 dogodkov) v datoteki h_bb_sorted.npy.
+
+Nariši spekter rekonstruiranih invariantnih mas Higgsovega bozona (histogram).
+
+Na podlagi spektra razmisli, kako bi določil končno maso Higgsovega bozona ter pripadajočo negotovost (napako), in oboje tudi izračunaj.
