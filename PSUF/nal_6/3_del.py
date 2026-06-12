@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
+plt.style.use('seaborn-v0_8-whitegrid')
+
 # 1. Ustvarimo mapo za slike
 os.makedirs('figs_3_del', exist_ok=True)
 
@@ -120,22 +122,20 @@ pT_vsi = prvi_dogodek[:, 0]
 kumulativni_pT = np.cumsum(pT_vsi) / np.sum(pT_vsi)
 
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 10))
-ax1.plot(pT_vsi, marker='.', markersize=4, linestyle='-', color='teal')
+ax1.plot(pT_vsi, marker='.', markersize=4, linestyle='-', color='C0')
 ax1.set_yscale('log')
 ax1.set_title('Transverzalna gibalna količina delcev ($p_T$)')
 ax1.set_ylabel('$p_T$ (GeV)')
 ax1.set_xlabel('Indeks delca')
-ax1.grid(True, linestyle='--', alpha=0.5)
 
-ax2.plot(kumulativni_pT, marker='.', markersize=4, linestyle='-', color='orangered')
+ax2.plot(kumulativni_pT, marker='.', markersize=4, linestyle='-', color='C1')
 ax2.set_yscale('log')
 ax2.set_title('Kumulativni delež celotne $p_T$')
 ax2.set_ylabel('Kumulativni delež $p_T$')
 ax2.set_xlabel('Indeks delca')
-ax2.grid(True, linestyle='--', alpha=0.5)
 
 plt.tight_layout()
-plt.savefig('figs_3_del/3a_kumulativni_pT.png')
+plt.savefig('figs_3_del/3a_kumulativni_pT.pdf')
 plt.close()
 
 # ==========================================
@@ -184,13 +184,13 @@ for idx, K in enumerate(vrednosti_K):
     osnovni_mean = mean_arr[0]
     osnovni_std = std_arr[0]
     ax.axhspan(osnovni_mean - osnovni_std, osnovni_mean + osnovni_std, 
-               color='yellow', alpha=0.6, label='K-means: z vsemi delci')
+               color='lightsteelblue', alpha=0.3, label='K-means: z vsemi delci')
     
     # Idealna eksperimentalna vrednost
-    ax.axhline(eksperimentalna_masa, color='red', linestyle='--', linewidth=1, label=f'$m_H^{{exp}} = {eksperimentalna_masa}$ GeV')
+    ax.axhline(eksperimentalna_masa, color='black', linestyle='--', linewidth=1, label=f'$m_H^{{exp}} = {eksperimentalna_masa}$ GeV')
     
     # Rezultati z napakami
-    ax.errorbar(koraki_odstranjevanja, mean_arr, yerr=std_arr, fmt='.-', color='blue', 
+    ax.errorbar(koraki_odstranjevanja, mean_arr, yerr=std_arr, fmt='.-', color='C0', 
                 elinewidth=1, markersize=6, label='z odstranjevanjem delcev')
     
     ax.set_title(f'Infrardeča varnost algoritma K-means: K = {K}')
@@ -199,7 +199,7 @@ for idx, K in enumerate(vrednosti_K):
     ax.legend(loc='lower left' if K == 20 else 'upper left')
 
 plt.tight_layout()
-plt.savefig('figs_3_del/3b_ir_varnost.png')
+plt.savefig('figs_3_del/3b_ir_varnost.pdf')
 plt.close()
 
 print("\nKoda se je uspešno izvedla. Slike za 3. del (infrardeča varnost in pT analiza) so shranjene v mapi 'figs_3_del/'.")

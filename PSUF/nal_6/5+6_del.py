@@ -2,8 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 import time
-# pyrefly: ignore [missing-import]
-from pyjet import DTYPE_PTEPM, cluster
+import fastjet as fj
+
+plt.style.use('seaborn-v0_8-whitegrid')
 
 # 1. Ustvarimo mapo za slike
 os.makedirs('figs_5+6_del', exist_ok=True)
@@ -103,9 +104,9 @@ p_param = 1 # algoritem k_t
 
 # Slovarji za shranjevanje rezultatov za vse R
 mase_moj = {R: [] for R in R_vrednosti}
-mase_pyjet = {R: [] for R in R_vrednosti}
+mase_fastjet = {R: [] for R in R_vrednosti}
 casi_moj = {R: [] for R in R_vrednosti}
-casi_pyjet = {R: [] for R in R_vrednosti}
+casi_fastjet = {R: [] for R in R_vrednosti}
 
 print("\n--- Zagon analize IR varnosti in časovne zahtevnosti za vse R ---")
 print("Opomba: Tvoja implementacija se bo izvajala okoli 1-2 minuti...")
@@ -113,7 +114,7 @@ print("Opomba: Tvoja implementacija se bo izvajala okoli 1-2 minuti...")
 for n_odstranjenih in koraki_odstranjevanja:
     trenutni_dogodek = prvi_dogodek_sorted[n_odstranjenih:]
     dogodek_moj_np = np.array([list(d) for d in trenutni_dogodek])
-    dogodek_pyjet = np.array(trenutni_dogodek, dtype=DTYPE_PTEPM)
+    dogodek_fastjet = [fj.PtYPhiM(d[0], d[1], d[2], d[3] if len(d) > 3 else 0.0) for d in trenutni_dogodek]
     
     for R in R_vrednosti:
         # ---------------------------
@@ -126,92 +127,101 @@ for n_odstranjenih in koraki_odstranjevanja:
         casi_moj[R].append(t1 - t0)
         
         # ---------------------------
-        # B) PyJet algoritem
+        # B) FastJet algoritem
         # ---------------------------
-        zagoni_pyjet = 50 # Za zanesljivo meritev časa pri ultra-hitrem pyjet-u
-        t0_pyjet = time.time()
-        for _ in range(zagoni_pyjet):
-            sequence = cluster(dogodek_pyjet, ep=False, R=R, p=p_param)
-            incl_jets = sequence.inclusive_jets()
-        t1_pyjet = time.time()
-        casi_pyjet[R].append((t1_pyjet - t0_pyjet) / zagoni_pyjet)
+        zagoni_fastjet = 50 # Za zanesljivo meritev časa
+        
+        if p_param == 1:
+            algo = fj.kt_algorithm
+        elif p_param == 0:
+            algo = fj.cambridge_algorithm
+        else:
+            algo = fj.antikt_algorithm
+            
+        jet_def = fj.JetDefinition(algo, R)
+        
+        t0_fastjet = time.time()
+        for _ in range(zagoni_fastjet):
+            cs = fj.ClusterSequence(dogodek_fastjet, jet_def)
+            incl_jets = fj.sorted_by_pt(cs.inclusive_jets())
+        t1_fastjet = time.time()
+        
+        casi_fastjet[R].append((t1_fastjet - t0_fastjet) / zagoni_fastjet)
         
         if len(incl_jets) >= 2:
-            incl_jets.sort(key=lambda j: j.pt, reverse=True)
             j1, j2 = incl_jets[0], incl_jets[1]
-            m_sq = (j1.e + j2.e)**2 - (j1.px + j2.px)**2 - (j1.py + j2.py)**2 - (j1.pz + j2.pz)**2
-            mase_pyjet[R].append(np.sqrt(max(0, m_sq)))
+            m_sq = (j1.e() + j2.e())**2 - (j1.px() + j2.px())**2 - (j1.py() + j2.py())**2 - (j1.pz() + j2.pz())**2
+            mase_fastjet[R].append(np.sqrt(max(0, m_sq)))
         else:
-            mase_pyjet[R].append(np.nan)
+            mase_fastjet[R].append(np.nan)
 
 # ==========================================
 # 4. Izris in shranjevanje grafov
 # ==========================================
-barve = {0.4: 'tab:blue', 0.5: 'tab:orange', 0.6: 'tab:green', 0.7: 'tab:red', 1.0: 'tab:purple'}
+barve = {R: f'C{i}' for i, R in enumerate(R_vrednosti)}
 
-# --- SLIKA 1: IR varnost samo tvoj algoritem ---
+# --- SLIKA 1: IR varnost samo Lastna implementacija ---
 plt.figure(figsize=(8, 6))
 for R in R_vrednosti:
-    plt.plot(koraki_odstranjevanja, mase_moj[R], label=f'$R={R}$', marker='.', color=barve[R])
+    plt.plot(koraki_odstranjevanja, mase_moj[R], label=f'$R={R}$', marker='o', linestyle='-', color=barve[R])
 
-plt.axhline(125.11, color='blue', linestyle='-', linewidth=4, alpha=0.2, label='$m_H^{exp} = 125.11 \pm 0.11$ GeV')
-plt.title(f'Infrardeča varnost mojega algoritma $k_t$')
+plt.axhline(125.11, color='black', linestyle='--', label=r'$m_H^{exp} = 125.11 \pm 0.11$ GeV')
+plt.title('Infrardeča varnost: Lastna implementacija $k_t$')
 plt.xlabel('št. odstranjenih delcev')
 plt.ylabel('$m_H$ (GeV)')
 plt.legend()
 plt.tight_layout()
-plt.savefig('figs_5+6_del/5_IR_varnost_moj.png')
+plt.savefig('figs_5+6_del/5_IR_varnost_moj.pdf')
 plt.close()
 
 
-# --- SLIKA 2: IR varnost samo PyJet algoritem ---
+# --- SLIKA 2: IR varnost samo FastJet algoritem ---
 plt.figure(figsize=(8, 6))
 for R in R_vrednosti:
-    plt.plot(koraki_odstranjevanja, mase_pyjet[R], label=f'$R={R}$', marker='.', color=barve[R])
+    plt.plot(koraki_odstranjevanja, mase_fastjet[R], label=f'$R={R}$', marker='x', linestyle='--', color=barve[R])
 
-plt.axhline(125.11, color='blue', linestyle='-', linewidth=4, alpha=0.2, label='$m_H^{exp} = 125.11 \pm 0.11$ GeV')
-plt.title(f'Infrardeča varnost pyjet algoritma $k_t$')
+plt.axhline(125.11, color='black', linestyle='--', label=r'$m_H^{exp} = 125.11 \pm 0.11$ GeV')
+plt.title('Infrardeča varnost algoritma fastjet $k_t$')
 plt.xlabel('št. odstranjenih delcev')
 plt.ylabel('$m_H$ (GeV)')
 plt.legend()
 plt.tight_layout()
-plt.savefig('figs_5+6_del/5_IR_varnost_pyjet.png')
+plt.savefig('figs_5+6_del/5_IR_varnost_fastjet.pdf')
 plt.close()
 
 
 # --- SLIKA 3: Primerjava obeh (Masa) ---
 plt.figure(figsize=(9, 7))
 for R in R_vrednosti:
-    plt.plot(koraki_odstranjevanja, mase_moj[R], label=f'$R={R}$, moj', marker='.', linestyle='-', color=barve[R])
-    plt.plot(koraki_odstranjevanja, mase_pyjet[R], label=f'$R={R}$, pyjet', marker='', linestyle='--', color=barve[R], alpha=0.7)
+    plt.plot(koraki_odstranjevanja, mase_moj[R], label=f'$R={R}$, Lastna implementacija', marker='o', linestyle='-', color=barve[R])
+    plt.plot(koraki_odstranjevanja, mase_fastjet[R], label=f'$R={R}$, fastjet', marker='x', linestyle='--', color=barve[R], alpha=0.7)
 
-plt.axhline(125.11, color='blue', linestyle='-', linewidth=4, alpha=0.2, label='$m_H^{exp} = 125.11 \pm 0.11$ GeV')
-plt.title(f'IR varnost mojega in pyjet algoritma $k_t$')
+plt.axhline(125.11, color='black', linestyle='--', label=r'$m_H^{exp} = 125.11 \pm 0.11$ GeV')
+plt.title('IR varnost: Lastna implementacija in fastjet $k_t$')
 plt.xlabel('št. odstranjenih delcev')
 plt.ylabel('$m_H$ (GeV)')
 plt.legend(ncol=2)
 plt.tight_layout()
-plt.savefig('figs_5+6_del/5_IR_varnost_primerjava.png')
+plt.savefig('figs_5+6_del/5_IR_varnost_primerjava.pdf')
 plt.close()
 
 
 # --- SLIKA 4: Primerjava časov izvajanja za vse R (samo logaritemska skala) ---
 plt.figure(figsize=(10, 7))
 for R in R_vrednosti:
-    plt.plot(koraki_odstranjevanja, casi_moj[R], label=f'$R={R}$, moj', marker='.', linestyle='-', color=barve[R])
-    plt.plot(koraki_odstranjevanja, casi_pyjet[R], label=f'$R={R}$, pyjet', marker='x', linestyle='--', color=barve[R], alpha=0.8)
+    plt.plot(koraki_odstranjevanja, casi_moj[R], label=f'$R={R}$, Lastna implementacija', marker='o', linestyle='-', color=barve[R])
+    plt.plot(koraki_odstranjevanja, casi_fastjet[R], label=f'$R={R}$, fastjet', marker='x', linestyle='--', color=barve[R], alpha=0.8)
 
-plt.title('Časovna zahtevnost mojega in pyjet algoritma $k_t$ (logaritemska skala)')
+plt.title('Časovna zahtevnost: Lastna implementacija in fastjet $k_t$ (logaritemska skala)')
 plt.xlabel('št. odstranjenih delcev (z najmanjšim $p_T$)')
 plt.ylabel('Čas izvajanja t (s)')
 plt.yscale('log')
-plt.grid(True, which="both", linestyle='--', alpha=0.4)
 
 # Legendo premaknemo izven grafa oz. jo postavimo v dva stolpca, da ne prekriva črt
 plt.legend(ncol=2, loc='center left')
 
 plt.tight_layout()
-plt.savefig('figs_5+6_del/6_cas_izvajanja_vsi_R.png', bbox_inches='tight')
+plt.savefig('figs_5+6_del/6_cas_izvajanja_vsi_R.pdf', bbox_inches='tight')
 plt.close()
 
 print("\nIzračuni so končani. Vse 4 slike so shranjene v mapo 'figs_5+6_del/'.")

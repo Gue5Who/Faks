@@ -4,6 +4,8 @@ import os
 from sklearn.mixture import GaussianMixture
 from sklearn.cluster import KMeans, AgglomerativeClustering, SpectralClustering
 
+plt.style.use('seaborn-v0_8-whitegrid')
+
 # 1. Ustvarimo mapo za slike, če še ne obstaja
 os.makedirs('figs_1+2_del', exist_ok=True)
 
@@ -62,14 +64,13 @@ for K in vrednosti_K_komolec:
 
 # Izris in shranjevanje grafa Metode komolca
 plt.figure(figsize=(8, 6))
-plt.plot(vrednosti_K_komolec, vztrajnosti, marker='o', linestyle='-', color='tab:blue')
-plt.title('Metoda komolca (Elbow Method)')
-plt.xlabel('Število gruč (K)')
-plt.ylabel('Vztrajnost (Inertia - WCSS)')
+plt.plot(vrednosti_K_komolec, vztrajnosti, marker='o', linestyle='-', color='C0')
+plt.title('Elbow Method')
+plt.xlabel('K')
+plt.ylabel('Inertia - WCSS')
 plt.xticks(vrednosti_K_komolec)
-plt.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
-plt.savefig('figs_1+2_del/1_komolec_K1_do_12.png')
+plt.savefig('figs_1+2_del/1_komolec_K1_do_12.pdf')
 plt.close()
 
 # ==========================================
@@ -83,15 +84,15 @@ for K in izbrani_K:
     
     plt.figure(figsize=(8, 6))
     for k in range(K):
-        plt.scatter(podatki[labele == k, 0], podatki[labele == k, 1], label=f'Gruča {k+1}', s=20)
+        plt.scatter(podatki[labele == k, 0], podatki[labele == k, 1], label=f'G{k+1}', s=20)
     plt.scatter(centroidi[:, 0], centroidi[:, 1], c='black', marker='x', s=100, linewidths=2, label='Centroidi')
-    plt.title(f'Moj algoritem K-means (K = {K})')
-    plt.xlabel('x os')
-    plt.ylabel('y os')
-    plt.legend()
+    plt.title(f'Lastna implementacija K-means (K = {K})')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend(fontsize='large')
     plt.tight_layout()
-    # Datoteka ima K v imenu (npr. figs_1+2_del/1_moj_kmeans_K2.png)
-    plt.savefig(f'figs_1+2_del/1_moj_kmeans_K{K}.png')
+    # Datoteka ima K v imenu (npr. figs_1+2_del/1_moj_kmeans_K2.pdf)
+    plt.savefig(f'figs_1+2_del/1_moj_kmeans_K{K}.pdf')
     plt.close()
     
     # Izpis statistike zgolj za optimalni primer K=2, kot zahtevajo navodila
@@ -119,14 +120,14 @@ for k in range(K_opt):
 
 plt.figure(figsize=(8, 6))
 for k in range(K_opt):
-    plt.scatter(podatki[labele_gmm == k, 0], podatki[labele_gmm == k, 1], label=f'Gruča {k+1}', s=20)
+    plt.scatter(podatki[labele_gmm == k, 0], podatki[labele_gmm == k, 1], label=f'G{k+1}', s=20)
 plt.scatter(gmm.means_[:, 0], gmm.means_[:, 1], c='black', marker='x', s=100, linewidths=2, label='Središča GMM')
 plt.title(f'Gručenje z GMM (K = {K_opt})')
-plt.xlabel('x os')
-plt.ylabel('y os')
-plt.legend()
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(fontsize='large')
 plt.tight_layout()
-plt.savefig(f'figs_1+2_del/2_gmm_K{K_opt}.png')
+plt.savefig(f'figs_1+2_del/2_gmm_K{K_opt}.pdf')
 plt.close()
 
 # ==========================================
@@ -140,13 +141,13 @@ labele_sk_kmeans = kmeans_sk.fit_predict(podatki)
 
 plt.figure(figsize=(8, 6))
 for k in range(K_opt):
-    plt.scatter(podatki[labele_sk_kmeans == k, 0], podatki[labele_sk_kmeans == k, 1], label=f'Gruča {k+1}', s=20)
+    plt.scatter(podatki[labele_sk_kmeans == k, 0], podatki[labele_sk_kmeans == k, 1], label=f'G{k+1}', s=20)
 plt.title(f'Gručenje s scikit-learn KMeans (K = {K_opt})')
-plt.xlabel('x os')
-plt.ylabel('y os')
-plt.legend()
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(fontsize='large')
 plt.tight_layout()
-plt.savefig(f'figs_1+2_del/3_sklearn_kmeans_K{K_opt}.png')
+plt.savefig(f'figs_1+2_del/3_sklearn_kmeans_K{K_opt}.pdf')
 plt.close()
 
 # b) Agglomerative Clustering (Hierarhično)
@@ -155,13 +156,13 @@ labele_agg = agg.fit_predict(podatki)
 
 plt.figure(figsize=(8, 6))
 for k in range(K_opt):
-    plt.scatter(podatki[labele_agg == k, 0], podatki[labele_agg == k, 1], label=f'Gruča {k+1}', s=20)
+    plt.scatter(podatki[labele_agg == k, 0], podatki[labele_agg == k, 1], label=f'G{k+1}', s=20)
 plt.title(f'Gručenje z Agglomerative Clustering (K = {K_opt})')
-plt.xlabel('x os')
-plt.ylabel('y os')
-plt.legend()
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(fontsize='large')
 plt.tight_layout()
-plt.savefig(f'figs_1+2_del/4_sklearn_agglomerative_K{K_opt}.png')
+plt.savefig(f'figs_1+2_del/4_sklearn_agglomerative_K{K_opt}.pdf')
 plt.close()
 
 # c) Spectral Clustering
@@ -171,13 +172,13 @@ labele_spec = spectral.fit_predict(podatki)
 plt.figure(figsize=(8, 6))
 barve = ['C1', 'C0']
 for k in range(K_opt):
-    plt.scatter(podatki[labele_spec == k, 0], podatki[labele_spec == k, 1], color=barve[k], label=f'Gruča {k+1}', s=20)
+    plt.scatter(podatki[labele_spec == k, 0], podatki[labele_spec == k, 1], color=barve[k], label=f'G{k+1}', s=20)
 plt.title(f'Gručenje s Spectral Clustering (K = {K_opt})')
-plt.xlabel('x os')
-plt.ylabel('y os')
-plt.legend()
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(fontsize='large')
 plt.tight_layout()
-plt.savefig(f'figs_1+2_del/5_sklearn_spectral_K{K_opt}.png')
+plt.savefig(f'figs_1+2_del/5_sklearn_spectral_K{K_opt}.pdf')
 plt.close()
 
 print("\nIzris in shranjevanje vseh slik uspešno zaključeno. Datoteke se nahajajo v mapi 'figs_1+2_del/'.")
