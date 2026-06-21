@@ -1,0 +1,42 @@
+1. del: Binarna mešanica in MNIST (Naloga 1)
+
+V tem delu boš uporabil preprost probabilistični model za gručenje in generiranje slik ročno napisanih števk (MNIST).
+
+Kaj moraš narediti:
+
+- Napisati in implementirati algoritem binarne mešanice (Expectation-Maximization algoritem), ki bo slike razdelil v 10 gruč (predvidoma po eno za vsako števko od 0 do 9). Sliko obravnavaš kot niz 784 pikslov, ki zavzemajo vrednosti med 0 in 1 (Bernoullijeva porazdelitev).
+- Vizualizirati naučene parametre μj kot slike (to so "povprečne" slike posamezne gruče).
+- Iz teh naučenih porazdelitev naključno generirati nekaj novih števk (npr. z uporabo binomske porazdelitve).
+
+Nasvet iz poročila: Tvoj kolega ugotavlja, da se nekatere števke pri tem pristopu rade pomešajo (npr. 9 se preplete s 7 ali 4), kakšna števka pa se lahko celo izgubi. To je za to metodo povsem običajno in sprejemljivo.
+
+2. del: Variacijski avtoenkoder (VAE) in MNIST (Naloge 2–4)
+
+Tukaj preideš na bolj napredno metodo (VAE), s katero boš preslikal 784-dimenzionalne slike števk v zvezni 2-dimenzionalni latentni prostor.
+
+Kaj moraš narediti:
+
+- Implementirati VAE v knjižnici Keras (ali PyTorch) po navodilih iz prosojnic (Enkoder: 1 skrita plast s 64 nevroni; Dekoder: 1 skrita plast s 64 nevroni; izhod je sigmoidna funkcija).
+- Model moraš trenirati 100 epoh z adam optimizatorjem.
+- Analiza latentnega prostora: Vsako števko iz testne množice moraš preslikati v 2D latentni prostor in narisati scatter plot, kjer vsako števko (0–9) obarvaš z drugo barvo.
+- Generiranje novih slik: Ustvariti moraš 2D mrežo točk v latentnem prostoru in te točke poslati skozi dekoder, da dobiš generirane slike števk ter jih vizualizirati v obliki mreže (zgled je na prosojnici 15).
+
+3. del: Iskanje dvocurkovnega signala (Nova fizika in VAE) (Naloge 5–15)
+
+To je glavni in najbolj fizikalen del naloge. Cilj je uporabiti VAE kot metodo za detekcijo anomalij. Med ogromnim številom dogodkov ozadja (Standardni model) iščeš zelo majhno število dogodkov signala (nov, neznan delec Z′, ki razpade na delca X in Y).
+
+Podatki: Imaš podatke z veliko signala (S/B = 10 %), podatke z malo signala (S/B = 0,1 %) in podatke "črne škatle" (kjer ne veš ničesar). VAE učiš samo na opazljivkah (mase in značilnosti curkov), ne pa tudi na invariantni masi (minv).
+
+Koraki, ki jih moraš izvesti (Testni podatki):
+
+- Transformacija (Naloga 5): Podatke moraš transformirati s QuantileTransformer, da postanejo njihove porazdelitve enakomerne. To narisati in preveriti, če inverzna transformacija deluje.
+- Trening VAE (Naloga 6): Zgraditi moraš nekoliko globlji VAE (3 skrite plasti po 64 nevronov) z le 1-dimenzionalnim latentnim prostorom (zmean, zlogvar). Cenovna funkcija se spremeni (MSE + KL, MSE pomnožen s 5000), uporabiš adadelta optimizator. To natreniraš za oba testna seta in uteži shraniš.
+- Evalvacija (Nalogi 7 in 8): Dogodke pošlješ skozi naučen enkoder in opazuješ, kje se nahaja signal v latentnem prostoru. Izkazalo se bo (kot piše tvoj kolega), da se signal nahaja na robovih porazdelitve. Zato bo najboljši klasifikator vrednost zmean2. Za to moraš narisati ROC krivuljo in izračunati AUC.
+- Določitev mas (Naloga 9): To je kritičen del. Podatke razvrstiš po vrednosti zmean2 (od največje proti najmanjši). Vzameš recimo prvih 500, 1000 in 2000 dogodkov in narišeš histograme njihovih mas (mj1, mj2 in minv). Iz teh histogramov moraš oceniti mase neznanih delcev in njihovo napako.
+
+Nasvet iz poročila: Kolega opozarja, da je določanje teh mas z risanjem oziroma prilagajanjem funkcije (npr. Crystal Ball) zelo nestabilno in zahteva kar nekaj igranja z začetnimi parametri, da funkcija lepo objame vrh histograma.
+
+Črna škatla (Nalogi 14 in 15):
+
+- Ponoviš identičen postopek (učenje VAE, izračun zmean2, razvrščanje in risanje histogramov) na podatkih blackbox_jetobs.npy.
+- Cilj je, da iz histogramov "črne škatle" prepoznaš vrhove in s tem napoveš mase treh neznanih delcev (X, Y in Z′) ter podaš oceno negotovosti. Priporočljivo je omejiti prikaz dogodkov na invariantne mase okoli 3,6–4,0 TeV, da lažje opaziš signal.
