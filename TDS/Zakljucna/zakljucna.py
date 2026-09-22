@@ -136,7 +136,7 @@ class BreathingAnnularBilliard:
                 self.perform_collision(is_inner)
 
 
-def experiment_energy_evolution():
+def experiment_energy_evolution(periods = 50, omega = 2.0):
     print("Izvajam eksperiment: Evolucija energije (Adiabatnost vs. Kaos)...")
     
     # PARAMETRI
@@ -144,7 +144,7 @@ def experiment_energy_evolution():
     r0 = 1.0
     eps = 0.2
      
-    periods = 50 #prioda nekje 50 je zadostna za kratkotrajno opazovanje in nad 1000 za bezanje navzgor
+    periods = periods #prioda nekje 50 je zadostna za kratkotrajno opazovanje in nad 1000 za bezanje navzgor
     
     # 1. Adiabatni primer (Zelo počasno dihanje)
     omega_slow = 0.01
@@ -166,7 +166,7 @@ def experiment_energy_evolution():
         E_vals_slow.append(sim_slow.energy())
 
     # 2. Hiter, ne-adiabaten (kaotičen) primer
-    omega_fast = 1.5
+    omega_fast = 5.0
     sim_fast = BreathingAnnularBilliard(R, r0, eps, omega_fast)
     sim_fast.set_initial_state(R, 0, vx0, vy0)
     
@@ -183,13 +183,13 @@ def experiment_energy_evolution():
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8))
     
     ax1.plot(t_vals_slow, E_vals_slow, label=rf'$\omega={omega_slow}$ (Adiabatno)')
-    ax1.set_title(r"Adiabatna invarianta: Energija diha skupaj s steno, a se v povprečju ohranja")
+    ax1.set_title(r'Adiabatna invarianta: Energija "diha" skupaj s steno')
     ax1.set_ylabel(r"Kinetična energija $E$")
     ax1.legend()
     ax1.grid()
     
     ax2.plot(t_vals_fast, E_vals_fast, color='red', label=rf'$\omega={omega_fast}$ (Kaotično)')
-    ax2.set_title(r"Porušitev invariante (Fermijevo pospeševanje): Energija kaotično raste")
+    ax2.set_title(r"Porušitev invariante")
     ax2.set_xlabel(r"Čas [število period $T$]")
     ax2.set_ylabel(r"Kinetična energija $E$")
     ax2.legend()
@@ -197,7 +197,7 @@ def experiment_energy_evolution():
     
     os.makedirs('figs', exist_ok=True)
     plt.tight_layout()
-    plt.savefig(f'figs/energy_evolution_periods_{periods}.png', dpi=500)
+    plt.savefig(f'figs/energy_evolution_periods_{periods}_{omega_fast}.png', dpi=300)
     plt.show()
 
 def experiment_stroboscopic_map():
@@ -307,10 +307,10 @@ def multi_omega_stroboscopic():
     
     plt.suptitle(rf"Porušitev adiabatne invariante in nastanek KAM barier ($L={L_target}, R={R}, r_0={r0}, \epsilon={eps}$)", fontsize=18)
     os.makedirs('figs', exist_ok=True)
-    plt.savefig("figs/billiard_bifurcation.png", dpi=500)
+    plt.savefig("figs/billiard_bifurcation.png", dpi=300)
     plt.show()
 
 if __name__ == '__main__':
-    # experiment_energy_evolution()
+    experiment_energy_evolution(periods=5000)
     # experiment_stroboscopic_map()
-    multi_omega_stroboscopic()
+    # multi_omega_stroboscopic()
