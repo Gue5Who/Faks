@@ -1,0 +1,114 @@
+OPOMBE: SPEKTRI Z ODSTOPAJOČIM RV (SME vs literatura)  --  POSODOBLJENO
+=======================================================================
+Podlaga: figs/sme_rv/rv_sme_rezultati.txt (zagon z drugim prehodom).
+RV_lit = GALAH DR3 (sicer Gaia DR3). razlika = RV_SME - RV_lit.
+310 spektrov, 41 objektov. Vzroki spodaj so SUMI, niso preverjeni.
+
+POVZETEK
+--------
+- Veljavnih fitov (brez roba okna in brez odstopanj): 198 / 310
+  Razlika SME - lit: mean = -1.27, median = -1.54, std = 2.53 km/s
+- Minimum na robu okna (na_robu): 112 spektrov. Pri večini je rv_sme_wide
+  skoraj enak rv_sme -> to NI slab spekter, ampak sistematičen odmik od
+  literature, večji od iskalnega okna (glej točko 2).
+- Zastavica odstopa (> 12 km/s od mediane objekta): 13 spektrov (točka 1).
+- Široki prehod (+-100 km/s) nikjer ne konča na robu (wide_na_robu = 0).
+
+1) POSAMEZNI SPEKTRI, KI ODSTOPAJO OD OSTALIH EPOH ISTE ZVEZDE  (odstopa=True)
+   ------------------------------------------------------------------------
+   objekt  spekter                       lit      rv_sme   rv_sme_wide
+   A2-085  20230204                     -12.2    -17.2     -60.1   (ostale epohe -17 ... -19)
+   A2-010  20211017                      24.8     19.8      -2.4
+   A2-023  20240420 (A2_023.fits)        -1.2    -47.6     -17.8
+   A2-028  20231028 (ime a2-023!)       -46.4     -4.3       0.3   <- verjetno napačno razvrščen
+   A2-028  20240420                     -46.4    -86.5     -62.4
+   A2-025  20240124, 20241212, 20250114  94.5   74...90    79...81  (RV pada ~15 km/s od 2021)
+   A2-106  20220601, 20230218           -58.6    -64     -76...-78
+   A2-091  20220212                      93.3    107.3     109.4
+   A2-249  20211017                     118.0    127.3     127.6
+   A2-006  20220323                     -31.2    -21.7     -22.3
+
+   Možni vzroki:
+   - napačna valovna kalibracija ali heliocentrična korekcija tega opazovanja
+     (premik celega spektra za ~0.5 A = ~25 km/s),
+   - slab S/N ali artefakt reduciranja,
+   - širok prehod lahko "pobegne" na napačno globoko črto (A2-085, A2-106:
+     rv_sme_wide se razlikuje od rv_sme za > 10 km/s).
+   Kako preveriti: primerjati položaj jeder Na D (ISM) med epohami iste
+   zvezde; pogledati header (DATE-OBS, helio. korekcija).
+   Opomba: A2-028/20231028_ech_a2-023_hv_c.fits ima v imenu a2-023 ->
+   verjetno spada k A2-023.
+
+2) CELOTNE ZVEZDE S SISTEMATIČNIM ODMIKOM OD LITERATURE
+   (vse epohe podoben odmik, std med epohami majhna; rv_sme ~ rv_sme_wide)
+   ------------------------------------------------------------------------
+   objekt   mediana razlike   std med epohami
+   A2-250       -9.4              1.8
+   A2-235       -7.9              1.1   (2 spektra)
+   A2-222       -7.8              -     (1 spekter)
+   A2-075       -7.6              1.3
+   A2-106       -7.1              6.3   (+ 2 odstopajoča, točka 1)
+   A2-103       -7.0              1.1
+   A2-216       -6.8              -     (1 spekter)
+   A2-171       -6.7              3.8
+   A2-053       -6.4              3.5
+   A2-184       -6.1              2.0
+   A2-006       -5.0              4.6
+   A2-256       -5.1              2.2
+   A2-164       +5.6              3.3
+   A2-178       +5.5              2.7
+
+   Zanimivo: večina odmikov je NEGATIVNA (SME < literatura), tipično -5 do
+   -9 km/s. To kaže na sistematiko in ne na posamezne zvezde.
+   Možni vzroki:
+   - sistematika SME modela / mirovne valovne dolžine (npr. konvektivni
+     premiki črt M giganta, ki jih model ne vsebuje),
+   - heliocentrična korekcija spektrov se razlikuje od literature,
+   - dvojne zvezde ali pulzacije (literatura je iz ene epohe, naše meritve
+     so čez več let).
+   Predlog: pogledati, ali je odmik enak pri vseh zvezdah (kar bi pomenilo
+   sistematiko) ali odvisen od zvezde (kar bi pomenilo fiziko).
+
+3) SKRAJNO ODSTOPAJOČI OBJEKTI (vsi spektri daleč od literature)
+   ------------------------------------------------------------------------
+   A2-342  lit 25.7; SME 6...12; wide 8...10; razlika ~ -17 km/s, 10/10 na robu
+           (nekaj spektrov: rv_sme = -46, -37, -11, a wide = 8...10)
+   A2-234  lit 60.5; SME 45...55; wide 14...33; razlika ~ -42 km/s, 6/6 na robu
+           (rv_sme in rv_sme_wide se razlikujeta za 20-40 km/s)
+
+   Možni vzroki:
+   - dvojna zvezda ali močna variabilnost (literatura ni iz iste faze),
+   - GALAH/Gaia RV neustrezen za ta objekt,
+   - POZOR: široki prehod lahko izbere napačen minimum. Medzvezdna
+     absorpcija Na D (ISM) ni več maskirana in globoka jedra D1/D2 pri
+     hitrosti blizu 0 km/s lahko "vlečejo" fit proti manjšim RV
+     (rv_sme_wide ~ 8-20 km/s pri A2-342 in A2-234 je sumljivo blizu ISM).
+   Predlog: pogledati slike teh spektrov in poskusiti ponovno z masko
+   jeder Na D (MASKA_NA_JEDRA).
+
+4) VELIKA RAZPRŠENOST MED EPOHAMI (std rv_best > 6 km/s)
+   ------------------------------------------------------------------------
+   A2-085 (17.3, zaradi 1 odstopajočega spektra), A2-028 (12.5, zaradi 2
+   odstopajočih), A2-025 (7.4, RV se spreminja v času), A2-010 (6.7),
+   A2-106 (6.3), A2-234 (6.7)
+   -> del razpršenosti je od odstopajočih spektrov (točka 1), A2-025 pa
+      kaže jasno časovno spremembo (kandidat za dvojno zvezdo/pulzator).
+
+SPLOŠNA OPOZORILA
+-----------------
+- Okno iskanja (RV_OKNO) vpliva na rezultat: pri večjem oknu se robni
+  fiti "skrijejo" (minimum je znotraj novega okna), čeprav je fit slab.
+  Zato razlikovati: na_robu + rv_sme_wide ~ rv_sme (sistematičen odmik) in
+  na_robu + rv_sme_wide <> rv_sme (sumljiv fit).
+- Predpostavka: spektri so že heliocentrično popravljeni.
+- Napake e_rv_sme (~0.3 km/s) so podcenjene (ploščata krivulja chi2);
+  realna negotovost je verjetno ~1 km/s.
+- V tem zagonu maskiranje jeder Na D ni vključeno (ISM absorpcija je v fitu).
+
+
+
+Znani razlogi:
+-----------------
+
+- Za 106 je baje bilo slabo vreme
+-

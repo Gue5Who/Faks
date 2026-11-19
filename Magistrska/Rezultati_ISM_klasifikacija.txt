@@ -1,0 +1,459 @@
+=================================================================
+ ASIAGO (Kriteriji: Razmak > 12.5 km/s, b > 0.5, tD2 > 0.05)
+=================================================================
+
+--- ZAZNAN IN POTRJEN ISM/CSM (220 spektrov) ---
+Rezultati/A2-001/Asiago/20210222_ech_a2-001_hv_c_data.txt (Razlika: 28.0 km/s)
+Rezultati/A2-006/Asiago/20210222_A2_006_data.txt (Razlika: 51.3 km/s)
+Rezultati/A2-006/Asiago/20211017_ech_a2-006_hv_c_data.txt (Razlika: 55.5 km/s)
+Rezultati/A2-006/Asiago/20211220_ech_a2-006_hv_c_data.txt (Razlika: 51.7 km/s)
+Rezultati/A2-006/Asiago/20220116_ech_a2-006_hv_c_data.txt (Razlika: 50.4 km/s)
+Rezultati/A2-006/Asiago/20220323_ech_a2-006_hv_c_data.txt (Razlika: 49.8 km/s)
+Rezultati/A2-006/Asiago/20221104_ech_a2-006_hv_c_data.txt (Razlika: 56.0 km/s)
+Rezultati/A2-006/Asiago/20230930_ech_a2-006_hv_c_data.txt (Razlika: 55.6 km/s)
+Rezultati/A2-006/Asiago/20231221_A2_006_data.txt (Razlika: 51.6 km/s)
+Rezultati/A2-006/Asiago/20240128_ech_a2-006_hv_c_data.txt (Razlika: 51.1 km/s)
+Rezultati/A2-006/Asiago/20240324_ech_a2-006_hv_c_data.txt (Razlika: 51.3 km/s)
+Rezultati/A2-006/Asiago/20240821_ech_a2-006_hv_c_data.txt (Razlika: 54.2 km/s)
+Rezultati/A2-006/Asiago/20241015_A2-006_data.txt (Razlika: 58.0 km/s)
+Rezultati/A2-006/Asiago/20241015_ech_a2-006_hv_c_data.txt (Razlika: 57.6 km/s)
+Rezultati/A2-006/Asiago/20241016_A2-006_data.txt (Razlika: 57.3 km/s)
+Rezultati/A2-006/Asiago/20250116_A2-006_data.txt (Razlika: 53.8 km/s)
+Rezultati/A2-006/Asiago/20250810_ech_a2-006_hv_c_data.txt (Razlika: 52.7 km/s)
+Rezultati/A2-010/Asiago/20210222_A2_010_data.txt (Razlika: 57.9 km/s)
+Rezultati/A2-010/Asiago/20220115_ech_a2-010_hv_c_data.txt (Razlika: 67.5 km/s)
+Rezultati/A2-010/Asiago/20230906_ech_a2-010_hv_c_data.txt (Razlika: 51.1 km/s)
+Rezultati/A2-010/Asiago/20231001_ech_a2-010_hv_c_data.txt (Razlika: 55.5 km/s)
+Rezultati/A2-010/Asiago/20240128_ech_a2-010_hv_c_data.txt (Razlika: 50.3 km/s)
+Rezultati/A2-011/Asiago/20210222_A2_011_data.txt (Razlika: 60.0 km/s)
+Rezultati/A2-011/Asiago/20211222_A2_011_data.txt (Razlika: 62.1 km/s)
+Rezultati/A2-011/Asiago/20220114_A2_011_data.txt (Razlika: 60.9 km/s)
+Rezultati/A2-011/Asiago/20221106_ech_a2-011_hv_c_data.txt (Razlika: 66.1 km/s)
+Rezultati/A2-011/Asiago/20231221_A2_011_data.txt (Razlika: 60.6 km/s)
+Rezultati/A2-011/Asiago/20240119_A2_011_data.txt (Razlika: 60.0 km/s)
+Rezultati/A2-011/Asiago/20240128_ech_a2-011_hv_c_data.txt (Razlika: 60.1 km/s)
+Rezultati/A2-011/Asiago/20241212_ech_a2-011_hv_c_data.txt (Razlika: 57.0 km/s)
+Rezultati/A2-011/Asiago/20250117_ech_a2-011_hv_c_data.txt (Razlika: 55.2 km/s)
+Rezultati/A2-023/asiago/20210301_A2_023_data.txt (Razlika: 65.1 km/s)
+Rezultati/A2-023/asiago/20211018_ech_a2-023_hv_c_data.txt (Razlika: 66.3 km/s)
+Rezultati/A2-023/asiago/20211222_A2_023_data.txt (Razlika: 59.4 km/s)
+Rezultati/A2-023/asiago/20221105_ech_a2-023_hv_c_data.txt (Razlika: 62.8 km/s)
+Rezultati/A2-023/asiago/20230203_ech_a2-023_hv_c_data.txt (Razlika: 25.0 km/s)
+Rezultati/A2-023/asiago/20231001_ech_a2-023_hv_c_data.txt (Razlika: 61.4 km/s)
+Rezultati/A2-023/asiago/20231028_ech_a2-023_hv_c_data.txt (Razlika: 54.3 km/s)
+Rezultati/A2-023/asiago/20240314_ech_a2-023_hv_f_data.txt (Razlika: 67.0 km/s)
+Rezultati/A2-023/asiago/20240420_A2_023_data.txt (Razlika: 26.6 km/s)
+Rezultati/a2-025/asiago/20211222_A2_025_data.txt (Razlika: 77.7 km/s)
+Rezultati/a2-025/asiago/20221106_ech_a2-025_hv_c_data.txt (Razlika: 77.8 km/s)
+Rezultati/a2-025/asiago/20240124_ech_a2-025_hv_c_data.txt (Razlika: 58.7 km/s)
+Rezultati/a2-028/asiago/20210301_A2_028_data.txt (Razlika: 64.7 km/s)
+Rezultati/a2-028/asiago/20211017_ech_a2-028_hv_c_data.txt (Razlika: 67.7 km/s)
+Rezultati/a2-028/asiago/20211222_A2_028_data.txt (Razlika: 66.8 km/s)
+Rezultati/a2-028/asiago/20220123_ech_a2-028_hv_c_data.txt (Razlika: 66.4 km/s)
+Rezultati/a2-028/asiago/20220323_ech_a2-028_hv_c_data.txt (Razlika: 65.6 km/s)
+Rezultati/a2-028/asiago/20221105_ech_a2-028_hv_c_data.txt (Razlika: 67.8 km/s)
+Rezultati/a2-028/asiago/20230203_ech_a2-028_hv_c_data.txt (Razlika: 67.6 km/s)
+Rezultati/a2-028/asiago/20230304_ech_a2-028_hv_c_data.txt (Razlika: 69.2 km/s)
+Rezultati/a2-028/asiago/20230402_ech_a2-028_hv_c_data.txt (Razlika: 67.8 km/s)
+Rezultati/a2-028/asiago/20231001_ech_a2-028_hv_c_data.txt (Razlika: 66.7 km/s)
+Rezultati/a2-028/asiago/20231026_ech_a2-028_hv_c_data.txt (Razlika: 67.1 km/s)
+Rezultati/a2-028/asiago/20231028_ech_a2-023_hv_c_data.txt (Razlika: 54.3 km/s)
+Rezultati/a2-028/asiago/20240324_ech_a2-028_hv_c_data.txt (Razlika: 67.1 km/s)
+Rezultati/a2-028/asiago/20240420_ech_a2-028_hv_c_data.txt (Razlika: 67.1 km/s)
+Rezultati/a2-028/asiago/20240825_ech_a2-028_hv_c_data.txt (Razlika: 67.4 km/s)
+Rezultati/a2-028/asiago/20250116_ech_a2-028_hv_c_data.txt (Razlika: 69.5 km/s)
+Rezultati/a2-028/asiago/20250810_ech_a2-028_hv_c_data.txt (Razlika: 65.8 km/s)
+Rezultati/a2-030/asiago/20210301_A2_030_data.txt (Razlika: 69.6 km/s)
+Rezultati/a2-030/asiago/20211120_ech_a2-030_hv_c_data.txt (Razlika: 69.0 km/s)
+Rezultati/a2-030/asiago/20230103_ech_a2-030_hv_c_data.txt (Razlika: 70.7 km/s)
+Rezultati/a2-030/asiago/20230906_ech_a2-030_hv_c_data.txt (Razlika: 69.9 km/s)
+Rezultati/a2-030/asiago/20231026_ech_a2-030_hv_c_data.txt (Razlika: 67.6 km/s)
+Rezultati/a2-030/asiago/20240324_ech_a2-030_hv_c_data.txt (Razlika: 69.6 km/s)
+Rezultati/a2-030/asiago/20250114_ech_a2-030_hv_c_data.txt (Razlika: 70.3 km/s)
+Rezultati/a2-045/asiago/20220211_ech_a2-045_hv_c_data.txt (Razlika: 56.2 km/s)
+Rezultati/a2-045/asiago/20220418_ech_a2-045_hv_c_data.txt (Razlika: 57.0 km/s)
+Rezultati/a2-045/asiago/20230203_ech_a2-045_hv_c_data.txt (Razlika: 55.6 km/s)
+Rezultati/a2-045/asiago/20230304_ech_a2-045_hv_c_data.txt (Razlika: 53.7 km/s)
+Rezultati/a2-045/asiago/20230402_ech_a2-045_hv_c_data.txt (Razlika: 57.3 km/s)
+Rezultati/a2-045/asiago/20231129_ech_a2-045_hv_c_data.txt (Razlika: 50.9 km/s)
+Rezultati/a2-045/asiago/20240119_A2_045_data.txt (Razlika: 57.4 km/s)
+Rezultati/a2-045/asiago/20240324_ech_a2-045_hv_c_data.txt (Razlika: 57.4 km/s)
+Rezultati/a2-045/asiago/20240420_A2_045_data.txt (Razlika: 60.0 km/s)
+Rezultati/a2-045/asiago/20241213_ech_a2-045_hv_c_data.txt (Razlika: 55.8 km/s)
+Rezultati/a2-045/asiago/20250118_ech_a2-045_hv_c_data.txt (Razlika: 49.5 km/s)
+Rezultati/a2-052/asiago/20210301_A2_052_data.txt (Razlika: 85.1 km/s)
+Rezultati/a2-052/asiago/20211016_ech_a2-052_hv_c_data.txt (Razlika: 81.8 km/s)
+Rezultati/a2-052/asiago/20211120_ech_a2-052_hv_c_data.txt (Razlika: 84.6 km/s)
+Rezultati/a2-052/asiago/20211218_ech_a2-052_hv_c_data.txt (Razlika: 84.4 km/s)
+Rezultati/a2-052/asiago/20220116_ech_a2-052_hv_c_data.txt (Razlika: 87.0 km/s)
+Rezultati/a2-052/asiago/20221105_ech_a2-052_hv_c_data.txt (Razlika: 85.1 km/s)
+Rezultati/a2-052/asiago/20230104_ech_a2-052_hv_c_data.txt (Razlika: 89.4 km/s)
+Rezultati/a2-052/asiago/20231002_ech_a2-052_hv_c_data.txt (Razlika: 88.9 km/s)
+Rezultati/a2-052/asiago/20241212_ech_a2-052_hv_c_data.txt (Razlika: 88.7 km/s)
+Rezultati/a2-052/asiago/20250117_ech_a2-052_hv_c_data.txt (Razlika: 87.4 km/s)
+Rezultati/a2-053/asiago/20210301_A2_053_data.txt (Razlika: 49.9 km/s)
+Rezultati/a2-053/asiago/20211120_ech_a2-053_hv_c_data.txt (Razlika: 45.4 km/s)
+Rezultati/a2-053/asiago/20220116_ech_a2-053_hv_c_data.txt (Razlika: 55.3 km/s)
+Rezultati/a2-053/asiago/20220212_ech_a2-053_hv_c_data.txt (Razlika: 55.0 km/s)
+Rezultati/a2-053/asiago/20220415_ech_a2-053_hv_c_data.txt (Razlika: 44.7 km/s)
+Rezultati/a2-053/asiago/20221105_ech_a2-053_hv_c_data.txt (Razlika: 42.9 km/s)
+Rezultati/a2-053/asiago/20230103_ech_a2-053_hv_c_data.txt (Razlika: 44.4 km/s)
+Rezultati/a2-053/asiago/20231002_ech_a2-053_hv_c_data.txt (Razlika: 44.3 km/s)
+Rezultati/a2-053/asiago/20231129_ech_a2-053_hv_c_data.txt (Razlika: 45.4 km/s)
+Rezultati/a2-053/asiago/20240324_ech_a2-053_hv_c_data.txt (Razlika: 46.2 km/s)
+Rezultati/a2-053/asiago/20241212_ech_a2-053_hv_c_data.txt (Razlika: 50.2 km/s)
+Rezultati/a2-053/asiago/20250118_ech_a2-053_hv_c_data.txt (Razlika: 54.8 km/s)
+Rezultati/a2-077/asiago/20210401_A2_077_data.txt (Razlika: 31.4 km/s)
+Rezultati/a2-077/asiago/20240420_A2_077_data.txt (Razlika: 50.1 km/s)
+Rezultati/a2-081/asiago/20210423_A2_081_data.txt (Razlika: 62.2 km/s)
+Rezultati/a2-081/asiago/20211218_ech_a2-081_hv_c_data.txt (Razlika: 64.6 km/s)
+Rezultati/a2-081/asiago/20220116_ech_a2-081_hv_c_data.txt (Razlika: 65.3 km/s)
+Rezultati/a2-081/asiago/20220212_ech_a2-081_hv_c_data.txt (Razlika: 64.6 km/s)
+Rezultati/a2-081/asiago/20220418_ech_a2-081_hv_c_data.txt (Razlika: 65.2 km/s)
+Rezultati/a2-081/asiago/20230204_ech_a2-081_hv_c_data.txt (Razlika: 64.8 km/s)
+Rezultati/a2-081/asiago/20230304_ech_a2-081_hv_c_data.txt (Razlika: 64.6 km/s)
+Rezultati/a2-081/asiago/20230402_ech_a2-081_hv_c_data.txt (Razlika: 63.7 km/s)
+Rezultati/a2-081/asiago/20240126_ech_a2-081_hv_c_data.txt (Razlika: 65.5 km/s)
+Rezultati/a2-081/asiago/20240420_A2_081_data.txt (Razlika: 64.5 km/s)
+Rezultati/a2-081/asiago/20241213_ech_a2-081_hv_c_data.txt (Razlika: 59.6 km/s)
+Rezultati/a2-081/asiago/20250115_ech_a2-081_hv_c_data.txt (Razlika: 64.9 km/s)
+Rezultati/a2-081/asiago/20250307_ech_a2-081_hv_c_data.txt (Razlika: 65.5 km/s)
+Rezultati/a2-081/asiago/20250407_ech_a2-081_hv_c_data.txt (Razlika: 66.2 km/s)
+Rezultati/a2-085/asiago/20220212_ech_a2-085_hv_c_data.txt (Razlika: 38.6 km/s)
+Rezultati/a2-085/asiago/20220418_ech_a2-085_hv_c_data.txt (Razlika: 27.7 km/s)
+Rezultati/a2-085/asiago/20230204_ech_a2-085_hv_c_data.txt (Razlika: 40.3 km/s)
+Rezultati/a2-085/asiago/20230305_ech_a2-085_hv_c_data.txt (Razlika: 35.5 km/s)
+Rezultati/a2-085/asiago/20240126_ech_a2-085_hv_c_data.txt (Razlika: 27.2 km/s)
+Rezultati/a2-091/asiago/20230104_ech_a2-091_hv_c_data.txt (Razlika: 78.7 km/s)
+Rezultati/a2-091/asiago/20240324_ech_a2-091_hv_c_data.txt (Razlika: 30.6 km/s)
+Rezultati/a2-091/asiago/20250115_ech_a2-091_hv_c_data.txt (Razlika: 15.9 km/s)
+Rezultati/a2-091/asiago/20250408_ech_a2-091_hv_c_data.txt (Razlika: 98.8 km/s)
+Rezultati/a2-103/asiago/20220213_ech_a2-103_hv_c_data.txt (Razlika: 26.2 km/s)
+Rezultati/a2-103/asiago/20220414_ech_a2-103_hv_c_data.txt (Razlika: 26.9 km/s)
+Rezultati/a2-103/asiago/20230403_ech_a2-103_hv_c_data.txt (Razlika: 26.5 km/s)
+Rezultati/a2-103/asiago/20240129_ech_a2-103_hv_c_data.txt (Razlika: 15.3 km/s)
+Rezultati/a2-103/asiago/20240420_ech_a2-103_hv_c_data.txt (Razlika: 23.6 km/s)
+Rezultati/a2-106/asiago/20210625_ech_a2-106_hv_f_data.txt (Razlika: 49.3 km/s)
+Rezultati/a2-106/asiago/20220601_ech_a2-106_hv_f_data.txt (Razlika: 77.4 km/s)
+Rezultati/a2-106/asiago/20220604_ech_a2-106_hv_f_data.txt (Razlika: 46.9 km/s)
+Rezultati/a2-106/asiago/20230218_ech_a2-106_hv_f_data.txt (Razlika: 39.9 km/s)
+Rezultati/a2-106/asiago/20230616_ech_a2-106_hv_f_data.txt (Razlika: 63.5 km/s)
+Rezultati/a2-106/asiago/20240325_ech_a2-106_hv_c_data.txt (Razlika: 53.2 km/s)
+Rezultati/a2-164/asiago/20210719_ech_a2-164_hv_f_data.txt (Razlika: 65.0 km/s)
+Rezultati/a2-164/asiago/20230709_ech_a2-164_hv_f_data.txt (Razlika: 65.7 km/s)
+Rezultati/a2-164/asiago/20230805_ech_a2-164_hv_f_data.txt (Razlika: 69.0 km/s)
+Rezultati/a2-171/asiago/20240325_ech_a2-171_hv_c_data.txt (Razlika: 29.9 km/s)
+Rezultati/a2-171/asiago/20250807_ech_a2-171_hv_c_data.txt (Razlika: 23.8 km/s)
+Rezultati/a2-178/asiago/20240824_ech_a2-178_hv_c_data.txt (Razlika: 86.4 km/s)
+Rezultati/a2-178/asiago/20250309_ech_a2-178_hv_c_data.txt (Razlika: 20.2 km/s)
+Rezultati/a2-178/asiago/20250408_ech_a2-178_hv_c_data.txt (Razlika: 16.5 km/s)
+Rezultati/a2-184/asiago/20220713_ech_a2-184_hv_c_data.txt (Razlika: 13.4 km/s)
+Rezultati/a2-184/asiago/20230403_ech_a2-184_hv_c_data.txt (Razlika: 13.1 km/s)
+Rezultati/a2-184/asiago/20250309_ech_a2-184_hv_c_data.txt (Razlika: 18.4 km/s)
+Rezultati/a2-184/asiago/20250408_ech_a2-184_hv_c_data.txt (Razlika: 13.6 km/s)
+Rezultati/a2-207/asiago/20240821_A2_207_data.txt (Razlika: 21.0 km/s)
+Rezultati/a2-224/asiago/20240823_ech_a2-224_hv_c_data.txt (Razlika: 85.0 km/s)
+Rezultati/a2-231/asiago/20240822_A2_231_data.txt (Razlika: 20.2 km/s)
+Rezultati/a2-234/asiago/20210725_ech_a2-234_hv_c_data.txt (Razlika: 61.2 km/s)
+Rezultati/a2-234/asiago/20220415_ech_a2-234_hv_c_data.txt (Razlika: 57.0 km/s)
+Rezultati/a2-234/asiago/20220717_ech_a2-234_hv_c_data.txt (Razlika: 59.5 km/s)
+Rezultati/a2-234/asiago/20230403_ech_a2-234_hv_c_data.txt (Razlika: 60.6 km/s)
+Rezultati/a2-234/asiago/20240325_ech_a2-234_hv_c_data.txt (Razlika: 20.2 km/s)
+Rezultati/a2-234/asiago/20240823_ech_a2-234_hv_c_data.txt (Razlika: 62.9 km/s)
+Rezultati/a2-236/asiago/20210820_ech_a2-236_hv_c_data.txt (Razlika: 17.6 km/s)
+Rezultati/a2-236/asiago/20220713_ech_a2-236_hv_c_data.txt (Razlika: 18.8 km/s)
+Rezultati/a2-236/asiago/20220816_ech_a2-236_hv_c_data.txt (Razlika: 17.6 km/s)
+Rezultati/a2-236/asiago/20230403_ech_a2-236_hv_c_data.txt (Razlika: 18.5 km/s)
+Rezultati/a2-236/asiago/20240822_A2_236_data.txt (Razlika: 19.0 km/s)
+Rezultati/a2-236/asiago/20250807_ech_a2-236_hv_c_data.txt (Razlika: 18.3 km/s)
+Rezultati/a2-249/asiago/20220718_ech_a2-249_hv_c_data.txt (Razlika: 29.3 km/s)
+Rezultati/a2-249/asiago/20231122_A2-249_data.txt (Razlika: 30.7 km/s)
+Rezultati/a2-249/asiago/20240421_ech_a2-249_hv_c_data.txt (Razlika: 29.0 km/s)
+Rezultati/a2-249/asiago/20240824_ech_a2-249_hv_c_data.txt (Razlika: 30.9 km/s)
+Rezultati/a2-249/asiago/20250809_ech_a2-249_hv_c_data.txt (Razlika: 31.0 km/s)
+Rezultati/a2-250/asiago/20210720_ech_a2-250_hv_c_data.txt (Razlika: 50.2 km/s)
+Rezultati/a2-250/asiago/20220415_ech_a2-250_hv_c_data.txt (Razlika: 16.5 km/s)
+Rezultati/a2-250/asiago/20220816_ech_a2-250_hv_c_data.txt (Razlika: 50.8 km/s)
+Rezultati/a2-250/asiago/20230305_ech_a2-250_hv_c_data.txt (Razlika: 16.8 km/s)
+Rezultati/a2-250/asiago/20240820_ech_a2-250_hv_c_data.txt (Razlika: 48.1 km/s)
+Rezultati/a2-250/asiago/20250807_ech_a2-250_hv_c_data.txt (Razlika: 46.7 km/s)
+Rezultati/a2-251/asiago/20210820_ech_a2-251_hv_c_data.txt (Razlika: 93.7 km/s)
+Rezultati/a2-251/asiago/20250809_ech_a2-251_hv_c_data.txt (Razlika: 97.3 km/s)
+Rezultati/a2-256/asiago/20210821_ech_a2-256_hv_c_data.txt (Razlika: 42.0 km/s)
+Rezultati/a2-256/asiago/20220912_ech_a2-256_hv_c_data.txt (Razlika: 40.8 km/s)
+Rezultati/a2-256/asiago/20230811_ech_a2-256_hv_c_data.txt (Razlika: 49.5 km/s)
+Rezultati/a2-256/asiago/20230926_ech_a2-256_hv_c_data.txt (Razlika: 58.1 km/s)
+Rezultati/a2-256/asiago/20240824_ech_a2-256_hv_c_data.txt (Razlika: 37.8 km/s)
+Rezultati/a2-323/asiago/20240822_A2_323_data.txt (Razlika: 85.9 km/s)
+Rezultati/a2-323/asiago/20250807_ech_a2-323_hv_c_data.txt (Razlika: 84.1 km/s)
+Rezultati/a2-342/asiago/20210720_ech_a2-342_hv_c_data.txt (Razlika: 24.5 km/s)
+Rezultati/a2-342/asiago/20220415_ech_a2-342_hv_c_data.txt (Razlika: 30.8 km/s)
+Rezultati/a2-342/asiago/20220714_ech_a2-342_hv_c_data.txt (Razlika: 23.3 km/s)
+Rezultati/a2-342/asiago/20220816_ech_a2-342_hv_c_data.txt (Razlika: 26.9 km/s)
+Rezultati/a2-342/asiago/20231002_ech_a2-342_hv_c_data.txt (Razlika: 18.5 km/s)
+Rezultati/a2-342/asiago/20231028_ech_a2-342_hv_c_data.txt (Razlika: 19.4 km/s)
+Rezultati/a2-342/asiago/20240822_A2_342_data.txt (Razlika: 28.9 km/s)
+Rezultati/a2-342/asiago/20241018_A2-342_data.txt (Razlika: 30.2 km/s)
+Rezultati/a2-342/asiago/20250808_ech_a2-342_hv_c_data.txt (Razlika: 18.8 km/s)
+Rezultati/a2-354/asiago/20220718_ech_a2-354_hv_c_data.txt (Razlika: 21.2 km/s)
+Rezultati/a2-354/asiago/20220816_ech_a2-354_hv_c_data.txt (Razlika: 20.5 km/s)
+Rezultati/a2-354/asiago/20221104_ech_a2-354_hv_c_data.txt (Razlika: 19.4 km/s)
+Rezultati/a2-354/asiago/20230905_ech_a2-354_hv_c_data.txt (Razlika: 24.4 km/s)
+Rezultati/a2-354/asiago/20240822_A2_354_data.txt (Razlika: 13.8 km/s)
+Rezultati/a2-354/asiago/20240824_ech_a2-354_hv_c_data.txt (Razlika: 15.9 km/s)
+Rezultati/a2-354/asiago/20250808_ech_a2-354_hv_c_data.txt (Razlika: 18.4 km/s)
+Rezultati/a2-356/asiago/20210725_ech_a2-356_hv_c_data.txt (Razlika: 19.8 km/s)
+Rezultati/a2-356/asiago/20211123_ech_a2-356_hv_c_data.txt (Razlika: 12.8 km/s)
+Rezultati/a2-356/asiago/20220719_ech_a2-356_hv_c_data.txt (Razlika: 19.0 km/s)
+Rezultati/a2-356/asiago/20230905_ech_a2-356_hv_c_data.txt (Razlika: 88.2 km/s)
+Rezultati/a2-356/asiago/20240824_ech_a2-356_hv_c_data.txt (Razlika: 13.6 km/s)
+Rezultati/a2-356/asiago/20250808_ech_a2-356_hv_c_data.txt (Razlika: 18.2 km/s)
+Rezultati/a2-362/asiago/20210720_ech_a2-362_hv_c_data.txt (Razlika: 47.8 km/s)
+Rezultati/a2-362/asiago/20211017_ech_a2-362_hv_c_data.txt (Razlika: 46.1 km/s)
+Rezultati/a2-362/asiago/20211119_ech_a2-362_hv_c_data.txt (Razlika: 46.5 km/s)
+Rezultati/a2-362/asiago/20211123_ech_a2-362_hv_c_data.txt (Razlika: 47.1 km/s)
+Rezultati/a2-362/asiago/20211217_ech_a2-362_hv_c_data.txt (Razlika: 47.8 km/s)
+Rezultati/a2-362/asiago/20220715_ech_a2-362_hv_c_data.txt (Razlika: 47.5 km/s)
+Rezultati/a2-362/asiago/20220817_ech_a2-362_hv_c_data.txt (Razlika: 48.1 km/s)
+Rezultati/a2-362/asiago/20230905_ech_a2-362_hv_c_data.txt (Razlika: 46.9 km/s)
+Rezultati/a2-362/asiago/20230930_ech_a2-362_hv_c_data.txt (Razlika: 47.6 km/s)
+Rezultati/a2-362/asiago/20231002_ech_a2-362_hv_c_data.txt (Razlika: 49.0 km/s)
+Rezultati/a2-362/asiago/20231028_ech_a2-362_hv_c_data.txt (Razlika: 48.9 km/s)
+Rezultati/a2-362/asiago/20240822_A2_362_data.txt (Razlika: 46.8 km/s)
+Rezultati/a2-362/asiago/20240825_ech_a2-362_hv_c_data.txt (Razlika: 46.9 km/s)
+Rezultati/a2-362/asiago/20250116_A2-362_data.txt (Razlika: 49.8 km/s)
+Rezultati/a2-362/asiago/20250810_ech_a2-362_hv_c_data.txt (Razlika: 47.8 km/s)
+
+--- ZAVRNJEN ISM/CSM (Zlit ali degeneriran fit) (76 spektrov) ---
+Rezultati/A2-001/Asiago/20211217_ech_a2-001_hv_c_data.txt (Razlika: 3.3 km/s) | Razlog zavrnitve: Razmak 3.3 <= inst. 12.5, Razmak 3.3 <= FWHM 21.8
+Rezultati/A2-001/Asiago/20230104_ech_a2-001_hv_c_data.txt (Razlika: 2.3 km/s) | Razlog zavrnitve: Razmak 2.3 <= inst. 12.5, Razmak 2.3 <= FWHM 20.9
+Rezultati/A2-001/Asiago/20230906_ech_a2-001_hv_c_data.txt (Razlika: 3.6 km/s) | Razlog zavrnitve: Razmak 3.6 <= inst. 12.5, Razmak 3.6 <= FWHM 22.6
+Rezultati/A2-001/Asiago/20231001_ech_a2-001_hv_c_data.txt (Razlika: 6.0 km/s) | Razlog zavrnitve: Razmak 6.0 <= inst. 12.5, Razmak 6.0 <= FWHM 14.0
+Rezultati/A2-001/Asiago/20240128_ech_a2-001_hv_c_data.txt (Razlika: 4.9 km/s) | Razlog zavrnitve: Razmak 4.9 <= inst. 12.5, Razmak 4.9 <= FWHM 20.3
+Rezultati/A2-001/Asiago/20240825_ech_a2-001_hv_c_data.txt (Razlika: 5.6 km/s) | Razlog zavrnitve: Razmak 5.6 <= inst. 12.5, Razmak 5.6 <= FWHM 19.3
+Rezultati/A2-001/Asiago/20250111_ech_a2-001_hv_c_data.txt (Razlika: 2.7 km/s) | Razlog zavrnitve: Razmak 2.7 <= inst. 12.5, Razmak 2.7 <= FWHM 18.1
+Rezultati/A2-001/Asiago/20250810_ech_a2-001_hv_c_data.txt (Razlika: 6.8 km/s) | Razlog zavrnitve: Razmak 6.8 <= inst. 12.5, Razmak 6.8 <= FWHM 19.9
+Rezultati/A2-010/Asiago/20211017_ech_a2-010_hv_c_data.txt (Razlika: 16.7 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-010/Asiago/20211222_A2_010_data.txt (Razlika: 53.0 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-010/Asiago/20221105_ech_a2-010_hv_c_data.txt (Razlika: 4.0 km/s) | Razlog zavrnitve: Razmak 4.0 <= inst. 12.5, Razmak 4.0 <= FWHM 47.2
+Rezultati/A2-010/Asiago/20230304_ech_a2-010_hv_c_data.txt (Razlika: 35.1 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-010/Asiago/20231026_ech_a2-010_hv_c_data.txt (Razlika: 52.4 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-010/Asiago/20231128_ech_a2-010_hv_c_data.txt (Razlika: 3.4 km/s) | Razlog zavrnitve: Razmak 3.4 <= inst. 12.5, Razmak 3.4 <= FWHM 29.2
+Rezultati/A2-010/Asiago/20250116_A2-010_data.txt (Razlika: 62.0 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-010/Asiago/20250117_ech_a2-010_hv_c_data.txt (Razlika: 56.2 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-023/asiago/20210324_A2_023_data.txt (Razlika: 8.0 km/s) | Razlog zavrnitve: Razmak 8.0 <= inst. 12.5, Razmak 8.0 <= FWHM 49.8
+Rezultati/A2-023/asiago/20220121_A2_023_data.txt (Razlika: 9.3 km/s) | Razlog zavrnitve: Razmak 9.3 <= inst. 12.5, Razmak 9.3 <= FWHM 49.8
+Rezultati/A2-023/asiago/20231122_A2-023_data.txt (Razlika: 5.2 km/s) | Razlog zavrnitve: Razmak 5.2 <= inst. 12.5, Razmak 5.2 <= FWHM 49.8
+Rezultati/A2-023/asiago/20250116_A2-023_data.txt (Razlika: 5.9 km/s) | Razlog zavrnitve: Razmak 5.9 <= inst. 12.5, Razmak 5.9 <= FWHM 49.8
+Rezultati/A2-023/asiago/20250116_ech_a2-023_hv_c_data.txt (Razlika: 5.9 km/s) | Razlog zavrnitve: Razmak 5.9 <= inst. 12.5, Razmak 5.9 <= FWHM 49.8
+Rezultati/a2-025/asiago/20210301_A2_025_data.txt (Razlika: 15.3 km/s) | Razlog zavrnitve: Preozko b=0.47
+Rezultati/a2-025/asiago/20210324_A2_025_data.txt (Razlika: 20.5 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-025/asiago/20220121_A2_025_data.txt (Razlika: 74.7 km/s) | Razlog zavrnitve: Preozko b=0.10, Preplitvo tD2=0.00
+Rezultati/a2-025/asiago/20241212_ech_a2-025_hv_c_data.txt (Razlika: 29.1 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-025/asiago/20250114_ech_a2-025_hv_c_data.txt (Razlika: 19.0 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-030/asiago/20210324_A2_030_data.txt (Razlika: 141.1 km/s) | Razlog zavrnitve: Preplitvo tD2=0.00
+Rezultati/a2-030/asiago/20220211_A2_030_data.txt (Razlika: 140.1 km/s) | Razlog zavrnitve: Preplitvo tD2=0.00
+Rezultati/a2-030/asiago/20221106_ech_a2-030_hv_c_data.txt (Razlika: 137.6 km/s) | Razlog zavrnitve: Preplitvo tD2=0.00
+Rezultati/a2-030/asiago/20231001_ech_a2-030_hv_c_data.txt (Razlika: 140.5 km/s) | Razlog zavrnitve: Preplitvo tD2=0.00
+Rezultati/a2-030/asiago/20241212_ech_a2-030_hv_c_data.txt (Razlika: 142.3 km/s) | Razlog zavrnitve: Preplitvo tD2=0.00
+Rezultati/a2-045/asiago/20210222_A2_045_data.txt (Razlika: 50.3 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-045/asiago/20220115_ech_a2-045_hv_c_data.txt (Razlika: 7.7 km/s) | Razlog zavrnitve: Razmak 7.7 <= inst. 12.5, Razmak 7.7 <= FWHM 49.8
+Rezultati/a2-045/asiago/20231026_ech_a2-045_hv_c_data.txt (Razlika: 7.9 km/s) | Razlog zavrnitve: Razmak 7.9 <= inst. 12.5, Razmak 7.9 <= FWHM 48.8
+Rezultati/a2-075/asiago/20210324_A2_075_data.txt (Razlika: 2.1 km/s) | Razlog zavrnitve: Razmak 2.1 <= inst. 12.5, Preozko b=0.10, Preplitvo tD2=0.00
+Rezultati/a2-075/asiago/20210329_A2_075_data.txt (Razlika: 17.7 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-075/asiago/20230104_ech_a2-075_hv_c_data.txt (Razlika: 15.3 km/s) | Razlog zavrnitve: Preplitvo tD2=0.00
+Rezultati/a2-075/asiago/20231129_ech_a2-075_hv_c_data.txt (Razlika: 16.4 km/s) | Razlog zavrnitve: Preozko b=0.10, Preplitvo tD2=0.00
+Rezultati/a2-077/asiago/20210324_A2_077_data.txt (Razlika: 19.8 km/s) | Razlog zavrnitve: Razmak 19.8 <= FWHM 22.4
+Rezultati/a2-077/asiago/20230104_ech_a2-077_hv_c_data.txt (Razlika: 9.2 km/s) | Razlog zavrnitve: Razmak 9.2 <= inst. 12.5
+Rezultati/a2-085/asiago/20230402_ech_a2-085_hv_c_data.txt (Razlika: 11.5 km/s) | Razlog zavrnitve: Razmak 11.5 <= inst. 12.5, Razmak 11.5 <= FWHM 13.8
+Rezultati/a2-091/asiago/20220212_ech_a2-091_hv_c_data.txt (Razlika: 56.5 km/s) | Razlog zavrnitve: Preozko b=0.10, Preplitvo tD2=0.00
+Rezultati/a2-091/asiago/20220418_ech_a2-091_hv_c_data.txt (Razlika: 18.4 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-091/asiago/20230305_ech_a2-091_hv_c_data.txt (Razlika: 13.9 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-091/asiago/20230403_ech_a2-091_hv_c_data.txt (Razlika: 26.0 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-091/asiago/20240420_ech_a2-091_hv_c_data.txt (Razlika: 14.6 km/s) | Razlog zavrnitve: Preozko b=0.22
+Rezultati/a2-091/asiago/20241213_ech_a2-091_hv_c_data.txt (Razlika: 99.6 km/s) | Razlog zavrnitve: Preozko b=0.15, Preplitvo tD2=0.00
+Rezultati/a2-091/asiago/20250308_ech_a2-091_hv_c_data.txt (Razlika: 6.7 km/s) | Razlog zavrnitve: Razmak 6.7 <= inst. 12.5, Preozko b=0.10, Preplitvo tD2=0.05
+Rezultati/a2-160/asiago/20240724_A2_160_data.txt (Razlika: 35.8 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-160/asiago/20240821_A2_160_data.txt (Razlika: 64.5 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-178/asiago/20240126_ech_a2-178_hv_c_data.txt (Razlika: 2.9 km/s) | Razlog zavrnitve: Razmak 2.9 <= inst. 12.5, Razmak 2.9 <= FWHM 9.0
+Rezultati/a2-178/asiago/20240325_ech_a2-178_hv_c_data.txt (Razlika: 8.2 km/s) | Razlog zavrnitve: Razmak 8.2 <= inst. 12.5
+Rezultati/a2-178/asiago/20250807_ech_a2-178_hv_c_data.txt (Razlika: 4.8 km/s) | Razlog zavrnitve: Razmak 4.8 <= inst. 12.5, Razmak 4.8 <= FWHM 9.2
+Rezultati/a2-184/asiago/20220124_ech_a2-184_hv_c_data.txt (Razlika: 10.3 km/s) | Razlog zavrnitve: Razmak 10.3 <= inst. 12.5
+Rezultati/a2-184/asiago/20220816_ech_a2-184_hv_c_data.txt (Razlika: 9.9 km/s) | Razlog zavrnitve: Razmak 9.9 <= inst. 12.5, Preozko b=0.49
+Rezultati/a2-184/asiago/20240126_ech_a2-184_hv_c_data.txt (Razlika: 11.3 km/s) | Razlog zavrnitve: Razmak 11.3 <= inst. 12.5, Preplitvo tD2=0.00
+Rezultati/a2-184/asiago/20240325_ech_a2-184_hv_c_data.txt (Razlika: 11.0 km/s) | Razlog zavrnitve: Razmak 11.0 <= inst. 12.5, Preozko b=0.10, Preplitvo tD2=0.00
+Rezultati/a2-184/asiago/20250807_ech_a2-184_hv_c_data.txt (Razlika: 9.8 km/s) | Razlog zavrnitve: Razmak 9.8 <= inst. 12.5
+Rezultati/a2-216/asiago/20240822_A2_216_data.txt (Razlika: 13.5 km/s) | Razlog zavrnitve: Preozko b=0.23
+Rezultati/a2-222/asiago/20240821_A2_222_data.txt (Razlika: 19.2 km/s) | Razlog zavrnitve: Razmak 19.2 <= FWHM 49.8
+Rezultati/a2-224/asiago/20240821_A2_224_data.txt (Razlika: 14.2 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-224/asiago/20250809_ech_a2-224_hv_c_data.txt (Razlika: 14.4 km/s) | Razlog zavrnitve: Razmak 14.4 <= FWHM 20.1
+Rezultati/a2-231/asiago/20240823_ech_a2-231_hv_c_data.txt (Razlika: 3.4 km/s) | Razlog zavrnitve: Razmak 3.4 <= inst. 12.5, Razmak 3.4 <= FWHM 49.8
+Rezultati/a2-231/asiago/20240824_ech_a2-231_hv_c_data.txt (Razlika: 3.5 km/s) | Razlog zavrnitve: Razmak 3.5 <= inst. 12.5, Razmak 3.5 <= FWHM 49.8
+Rezultati/a2-235/asiago/20240822_A2_235_data.txt (Razlika: 10.6 km/s) | Razlog zavrnitve: Razmak 10.6 <= inst. 12.5
+Rezultati/a2-235/asiago/20250810_ech_a2-235_hv_c_data.txt (Razlika: 31.1 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-236/asiago/20230905_ech_a2-236_hv_c_data.txt (Razlika: 9.0 km/s) | Razlog zavrnitve: Razmak 9.0 <= inst. 12.5, Razmak 9.0 <= FWHM 21.7
+Rezultati/a2-249/asiago/20211017_ech_a2-249_hv_c_data.txt (Razlika: 42.0 km/s) | Razlog zavrnitve: Preozko b=0.10, Preplitvo tD2=0.00
+Rezultati/a2-342/asiago/20240820_ech_a2-342_hv_c_data.txt (Razlika: 1.5 km/s) | Razlog zavrnitve: Razmak 1.5 <= inst. 12.5, Razmak 1.5 <= FWHM 26.3
+Rezultati/a2-354/asiago/20210725_ech_a2-354_hv_c_data.txt (Razlika: 9.5 km/s) | Razlog zavrnitve: Razmak 9.5 <= inst. 12.5, Razmak 9.5 <= FWHM 9.9
+Rezultati/a2-354/asiago/20231028_ech_a2-354_hv_c_data.txt (Razlika: 11.5 km/s) | Razlog zavrnitve: Razmak 11.5 <= inst. 12.5, Preozko b=0.10
+Rezultati/a2-356/asiago/20211120_ech_a2-356_hv_c_data.txt (Razlika: 11.4 km/s) | Razlog zavrnitve: Razmak 11.4 <= inst. 12.5
+Rezultati/a2-356/asiago/20231001_ech_a2-356_hv_c_data.txt (Razlika: 28.9 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-356/asiago/20231028_ech_a2-356_hv_c_data.txt (Razlika: 12.2 km/s) | Razlog zavrnitve: Razmak 12.2 <= inst. 12.5, Preozko b=0.10
+Rezultati/a2-356/asiago/20231128_ech_a2-356_hv_c_data.txt (Razlika: 13.2 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-356/asiago/20240822_A2_356_data.txt (Razlika: 7.5 km/s) | Razlog zavrnitve: Razmak 7.5 <= inst. 12.5, Razmak 7.5 <= FWHM 14.2
+
+
+=================================================================
+ VARESE (Kriteriji: Razmak > 27.3 km/s, b > 0.5, tD2 > 0.05)
+=================================================================
+
+--- ZAZNAN IN POTRJEN ISM/CSM (110 spektrov) ---
+Rezultati/A2-006/Varese/20211120/20211120_ech_a2-006_hv_f_data.txt (Razlika: 51.8 km/s)
+Rezultati/A2-006/Varese/20211120/20211120_ech_hr1222_1_hv_f_data.txt (Razlika: 71.2 km/s)
+Rezultati/A2-006/Varese/20211120/20211120_ech_hr1222_2_hv_f_data.txt (Razlika: 70.2 km/s)
+Rezultati/A2-006/Varese/20211218/20211218_ech_a2-006_hv_f_data.txt (Razlika: 50.9 km/s)
+Rezultati/A2-006/Varese/20211218/20211218_ech_hr1222_1_hv_f_data.txt (Razlika: 64.3 km/s)
+Rezultati/A2-006/Varese/20211218/20211218_ech_hr1222_2_hv_f_data.txt (Razlika: 65.0 km/s)
+Rezultati/A2-006/Varese/20220129/20220129_ech_a2-006_hv_f_data.txt (Razlika: 48.3 km/s)
+Rezultati/A2-006/Varese/20220129/20220129_ech_hr1222_1_hv_f_data.txt (Razlika: 68.3 km/s)
+Rezultati/A2-006/Varese/20220129/20220129_ech_hr1222_2_hv_f_data.txt (Razlika: 66.6 km/s)
+Rezultati/A2-006/Varese/20221210/20221210_ech_a2-006_hv_f_data.txt (Razlika: 57.7 km/s)
+Rezultati/A2-006/Varese/20221210/20221210_ech_hr1222_1_hv_f_data.txt (Razlika: 67.4 km/s)
+Rezultati/A2-006/Varese/20221210/20221210_ech_hr1222_2_hv_f_data.txt (Razlika: 69.8 km/s)
+Rezultati/A2-006/Varese/20221227/20221227_ech_a2-006_hv_f_data.txt (Razlika: 52.5 km/s)
+Rezultati/A2-006/Varese/20221227/20221227_ech_hr1222_1_hv_f_data.txt (Razlika: 67.7 km/s)
+Rezultati/A2-006/Varese/20221227/20221227_ech_hr1222_2_hv_f_data.txt (Razlika: 63.9 km/s)
+Rezultati/A2-006/Varese/20231111/20231111_ech_hr1222_1_hv_f_data.txt (Razlika: 70.8 km/s)
+Rezultati/A2-006/Varese/20231111/20231111_ech_hr1222_2_hv_f_data.txt (Razlika: 67.1 km/s)
+Rezultati/A2-006/Varese/20231112/20231112_ech_hr1222_1_hv_f_data.txt (Razlika: 66.4 km/s)
+Rezultati/A2-006/Varese/20231112/20231112_ech_hr1222_2_hv_f_data.txt (Razlika: 67.5 km/s)
+Rezultati/A2-006/Varese/20231115/20231115_ech_a2-006_hv_f_data.txt (Razlika: 58.5 km/s)
+Rezultati/A2-006/Varese/20231115/20231115_ech_hr1222_1_hv_f_data.txt (Razlika: 64.4 km/s)
+Rezultati/A2-006/Varese/20231115/20231115_ech_hr1222_2_hv_f_data.txt (Razlika: 64.4 km/s)
+Rezultati/A2-006/Varese/20231206/20231206_ech_hr1222_2_hv_f_data.txt (Razlika: 71.0 km/s)
+Rezultati/A2-006/Varese/20231214/20231214_ech_hr1222_1_hv_f_data.txt (Razlika: 63.8 km/s)
+Rezultati/A2-006/Varese/20231214/20231214_ech_hr1222_2_hv_f_data.txt (Razlika: 71.7 km/s)
+Rezultati/A2-006/Varese/20231219/20231219_ech_a2-006_hv_f_data.txt (Razlika: 56.5 km/s)
+Rezultati/A2-006/Varese/20231219/20231219_ech_hr1222_1_hv_f_data.txt (Razlika: 64.4 km/s)
+Rezultati/A2-006/Varese/20231219/20231219_ech_hr1222_2_hv_f_data.txt (Razlika: 65.1 km/s)
+Rezultati/A2-006/Varese/20231226/20231226_ech_a2-006_hv_f_data.txt (Razlika: 54.9 km/s)
+Rezultati/A2-006/Varese/20231226/20231226_ech_hr1222_1_hv_f_data.txt (Razlika: 62.4 km/s)
+Rezultati/A2-006/Varese/20231226/20231226_ech_hr1222_2_hv_f_data.txt (Razlika: 67.6 km/s)
+Rezultati/A2-006/Varese/20240111/20240111_ech_hr1222_1_hv_f_data.txt (Razlika: 66.3 km/s)
+Rezultati/A2-006/Varese/20240111/20240111_ech_hr1222_2_hv_f_data.txt (Razlika: 69.8 km/s)
+Rezultati/A2-006/Varese/20240119/20240119_ech_a2-006_hv_f_data.txt (Razlika: 54.1 km/s)
+Rezultati/A2-006/Varese/20240119/20240119_ech_hr1222_1_hv_f_data.txt (Razlika: 67.5 km/s)
+Rezultati/A2-006/Varese/20240119/20240119_ech_hr1222_2_hv_f_data.txt (Razlika: 70.4 km/s)
+Rezultati/A2-006/Varese/20240126/20240126_ech_a2-006_hv_f_data.txt (Razlika: 51.2 km/s)
+Rezultati/A2-006/Varese/20240126/20240126_ech_hr1222_1_hv_f_data.txt (Razlika: 62.8 km/s)
+Rezultati/A2-006/Varese/20240126/20240126_ech_hr1222_2_hv_f_data.txt (Razlika: 70.2 km/s)
+Rezultati/A2-006/Varese/20240131/20240131_ech_a2-006_hv_f_data.txt (Razlika: 44.6 km/s)
+Rezultati/A2-006/Varese/20240131/20240131_ech_hr1222_1_hv_f_data.txt (Razlika: 67.3 km/s)
+Rezultati/A2-006/Varese/20240131/20240131_ech_hr1222_2_hv_f_data.txt (Razlika: 69.2 km/s)
+Rezultati/A2-006/Varese/20240211/20240211_ech_a2-006_hv_f_data.txt (Razlika: 49.0 km/s)
+Rezultati/A2-006/Varese/20240211/20240211_ech_hr1222_1_hv_f_data.txt (Razlika: 66.3 km/s)
+Rezultati/A2-006/Varese/20240211/20240211_ech_hr1222_2_hv_f_data.txt (Razlika: 71.6 km/s)
+Rezultati/A2-006/Varese/20240223/20240223_ech_a2-006_hv_f_data.txt (Razlika: 49.4 km/s)
+Rezultati/A2-006/Varese/20240223/20240223_ech_hr1222_2_hv_f_data.txt (Razlika: 61.8 km/s)
+Rezultati/A2-006/Varese/20240313/20240313_ech_hr1222_1_hv_f_data.txt (Razlika: 61.8 km/s)
+Rezultati/A2-006/Varese/20240313/20240313_ech_hr1222_2_hv_f_data.txt (Razlika: 51.5 km/s)
+Rezultati/A2-006/Varese/20240314/20240314_ech_a2-006_hv_f_data.txt (Razlika: 48.4 km/s)
+Rezultati/A2-006/Varese/20240314/20240314_ech_hr1222_1_hv_f_data.txt (Razlika: 63.2 km/s)
+Rezultati/A2-006/Varese/20240324/20240324_ech_a2-006_hv_f_data.txt (Razlika: 48.0 km/s)
+Rezultati/A2-006/Varese/20240324/20240324_ech_hr1222_1_hv_f_data.txt (Razlika: 65.9 km/s)
+Rezultati/A2-006/Varese/20240324/20240324_ech_hr1222_2_hv_f_data.txt (Razlika: 64.4 km/s)
+Rezultati/A2-006/Varese/20241027/20241027_ech_a2-006_hv_f_data.txt (Razlika: 52.0 km/s)
+Rezultati/A2-006/Varese/20241027/20241027_ech_hr1222_1_hv_f_data.txt (Razlika: 72.2 km/s)
+Rezultati/A2-006/Varese/20241028/20241028_ech_hr1222_1_hv_f_data.txt (Razlika: 82.1 km/s)
+Rezultati/A2-006/Varese/20241028/20241028_ech_hr1222_2_hv_f_data.txt (Razlika: 70.0 km/s)
+Rezultati/A2-006/Varese/20241029/20241029_ech_hr1222_1_hv_f_data.txt (Razlika: 66.1 km/s)
+Rezultati/A2-006/Varese/20241029/20241029_ech_hr1222_2_hv_f_data.txt (Razlika: 70.4 km/s)
+Rezultati/A2-006/Varese/20241107/20241107_ech_a2-006_hv_f_data.txt (Razlika: 59.6 km/s)
+Rezultati/A2-006/Varese/20241107/20241107_ech_hr1222_1_hv_f_data.txt (Razlika: 63.0 km/s)
+Rezultati/A2-006/Varese/20241107/20241107_ech_hr1222_2_hv_f_data.txt (Razlika: 74.7 km/s)
+Rezultati/A2-006/Varese/20241118/20241118_ech_a2-006_hv_f_data.txt (Razlika: 48.3 km/s)
+Rezultati/A2-006/Varese/20241118/20241118_ech_hr1222_1_hv_f_data.txt (Razlika: 72.0 km/s)
+Rezultati/A2-006/Varese/20241118/20241118_ech_hr1222_2_hv_f_data.txt (Razlika: 67.0 km/s)
+Rezultati/A2-006/Varese/20241201/20241201_ech_a2-006_hv_f_data.txt (Razlika: 44.4 km/s)
+Rezultati/A2-006/Varese/20241201/20241201_ech_hr1222_1_hv_f_data.txt (Razlika: 67.4 km/s)
+Rezultati/A2-006/Varese/20241201/20241201_ech_hr1222_2_hv_f_data.txt (Razlika: 66.0 km/s)
+Rezultati/A2-006/Varese/20241216/20241216_ech_a2-006_hv_f_data.txt (Razlika: 50.4 km/s)
+Rezultati/A2-006/Varese/20241216/20241216_ech_hr1222_1_hv_f_data.txt (Razlika: 66.5 km/s)
+Rezultati/A2-006/Varese/20241216/20241216_ech_hr1222_2_hv_f_data.txt (Razlika: 60.3 km/s)
+Rezultati/A2-006/Varese/20241224/20241224_ech_hr1222_1_hv_f_data.txt (Razlika: 69.6 km/s)
+Rezultati/A2-006/Varese/20241224/20241224_ech_hr1222_2_hv_f_data.txt (Razlika: 58.2 km/s)
+Rezultati/A2-006/Varese/20241227/20241227_ech_a2-006_hv_f_data.txt (Razlika: 52.4 km/s)
+Rezultati/A2-006/Varese/20241227/20241227_ech_hr1222_1_hv_f_data.txt (Razlika: 66.8 km/s)
+Rezultati/A2-006/Varese/20241227/20241227_ech_hr1222_2_hv_f_data.txt (Razlika: 62.2 km/s)
+Rezultati/A2-006/Varese/20241229/20241229_ech_a2-006_hv_f_data.txt (Razlika: 47.1 km/s)
+Rezultati/A2-006/Varese/20241229/20241229_ech_hr1222_1_hv_f_data.txt (Razlika: 68.2 km/s)
+Rezultati/A2-006/Varese/20241229/20241229_ech_hr1222_2_hv_f_data.txt (Razlika: 71.7 km/s)
+Rezultati/A2-006/Varese/20250103/20250103_ech_a2-006_hv_f_data.txt (Razlika: 50.2 km/s)
+Rezultati/A2-006/Varese/20250103/20250103_ech_hr1222_1_hv_f_data.txt (Razlika: 60.8 km/s)
+Rezultati/A2-006/Varese/20250103/20250103_ech_hr1222_2_hv_f_data.txt (Razlika: 68.0 km/s)
+Rezultati/A2-006/Varese/20250112/20250112_ech_a2-006_hv_f_data.txt (Razlika: 44.2 km/s)
+Rezultati/A2-006/Varese/20250112/20250112_ech_hr1222_1_hv_f_data.txt (Razlika: 67.8 km/s)
+Rezultati/A2-006/Varese/20250112/20250112_ech_hr1222_2_hv_f_data.txt (Razlika: 65.3 km/s)
+Rezultati/A2-006/Varese/20250113/20250113_ech_hr1222_1_hv_f_data.txt (Razlika: 67.7 km/s)
+Rezultati/A2-006/Varese/20250113/20250113_ech_hr1222_2_hv_f_data.txt (Razlika: 61.6 km/s)
+Rezultati/A2-006/Varese/20250116/20250116_ech_hr1222_1_hv_f_data.txt (Razlika: 60.8 km/s)
+Rezultati/A2-006/Varese/20250116/20250116_ech_hr1222_2_hv_f_data.txt (Razlika: 67.0 km/s)
+Rezultati/A2-006/Varese/20250202/20250202_ech_a2-006_hv_f_data.txt (Razlika: 50.3 km/s)
+Rezultati/A2-006/Varese/20250202/20250202_ech_hr1222_2_hv_f_data.txt (Razlika: 69.0 km/s)
+Rezultati/A2-006/Varese/20250223/20250223_ech_a2-006_hv_f_data.txt (Razlika: 46.5 km/s)
+Rezultati/A2-006/Varese/20250223/20250223_ech_hr1222_1_hv_f_data.txt (Razlika: 69.2 km/s)
+Rezultati/A2-006/Varese/20250227/20250227_ech_a2-006_hv_f_data.txt (Razlika: 46.8 km/s)
+Rezultati/A2-006/Varese/20250227/20250227_ech_hr1222_1_hv_f_data.txt (Razlika: 66.4 km/s)
+Rezultati/A2-006/Varese/20250227/20250227_ech_hr1222_2_hv_f_data.txt (Razlika: 60.4 km/s)
+Rezultati/A2-006/Varese/20250304/20250304_ech_a2-006_hv_f_data.txt (Razlika: 47.0 km/s)
+Rezultati/A2-006/Varese/20250304/20250304_ech_hr1222_1_hv_f_data.txt (Razlika: 69.2 km/s)
+Rezultati/A2-006/Varese/20250304/20250304_ech_hr1222_2_hv_f_data.txt (Razlika: 66.7 km/s)
+Rezultati/A2-006/Varese/20250308/20250308_ech_a2-006_hv_f_data.txt (Razlika: 44.8 km/s)
+Rezultati/A2-006/Varese/20250308/20250308_ech_hr1222_1_hv_f_data.txt (Razlika: 67.2 km/s)
+Rezultati/A2-006/Varese/20250317/20250317_ech_hr1222_1_hv_f_data.txt (Razlika: 65.3 km/s)
+Rezultati/A2-006/Varese/20250317/20250317_ech_hr1222_2_hv_f_data.txt (Razlika: 61.3 km/s)
+Rezultati/A2-006/Varese/20250319/20250308_ech_a2-006_hv_f_data.txt (Razlika: 44.8 km/s)
+Rezultati/A2-006/Varese/20250319/20250308_ech_hr1222_1_hv_f_data.txt (Razlika: 67.2 km/s)
+Rezultati/A2-006/Varese/20250403/20250403_ech_a2-006_hv_f_data.txt (Razlika: 53.0 km/s)
+Rezultati/A2-006/Varese/20250403/20250403_ech_hr1222_1_hv_f_data.txt (Razlika: 67.4 km/s)
+Rezultati/A2-006/Varese/20250410/20250410_ech_a2-006_hv_f_data.txt (Razlika: 55.6 km/s)
+Rezultati/A2-006/Varese/20250410/20250410_ech_hr1222_1_hv_f_data.txt (Razlika: 63.4 km/s)
+
+--- ZAVRNJEN ISM/CSM (Zlit ali degeneriran fit) (37 spektrov) ---
+Rezultati/A2-001/Varese/20210224_ech_a2-001_hv_f_data.txt (Razlika: 26.2 km/s) | Razlog zavrnitve: Razmak 26.2 <= inst. 27.3, Preozko b=0.10
+Rezultati/A2-001/Varese/20211026_ech_a2-001_hv_f_data.txt (Razlika: 6.9 km/s) | Razlog zavrnitve: Razmak 6.9 <= inst. 27.3, Preozko b=0.10
+Rezultati/A2-001/Varese/20220129_ech_a2-001_hv_f_data.txt (Razlika: 6.1 km/s) | Razlog zavrnitve: Razmak 6.1 <= inst. 27.3, Razmak 6.1 <= FWHM 49.8
+Rezultati/A2-001/Varese/20221018_ech_a2-001_hv_f_data.txt (Razlika: 11.9 km/s) | Razlog zavrnitve: Razmak 11.9 <= inst. 27.3, Razmak 11.9 <= FWHM 49.8
+Rezultati/A2-001/Varese/20231111_ech_a2-001_hv_f_data.txt (Razlika: 20.6 km/s) | Razlog zavrnitve: Razmak 20.6 <= inst. 27.3, Razmak 20.6 <= FWHM 29.5
+Rezultati/A2-001/Varese/20231115_ech_a2-001_hv_f_data.txt (Razlika: 30.4 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-001/Varese/20231126_ech_a2-001_hv_f_data.txt (Razlika: 6.1 km/s) | Razlog zavrnitve: Razmak 6.1 <= inst. 27.3, Razmak 6.1 <= FWHM 20.1
+Rezultati/A2-001/Varese/20241028_ech_a2-001_hv_f_data.txt (Razlika: 11.1 km/s) | Razlog zavrnitve: Razmak 11.1 <= inst. 27.3, Razmak 11.1 <= FWHM 36.2
+Rezultati/A2-001/Varese/20241115_ech_a2-001_hv_data.txt (Razlika: 25.0 km/s) | Razlog zavrnitve: Razmak 25.0 <= inst. 27.3
+Rezultati/A2-001/Varese/20241215_ech_a2-001_hv_f_data.txt (Razlika: 2.0 km/s) | Razlog zavrnitve: Razmak 2.0 <= inst. 27.3, Razmak 2.0 <= FWHM 11.0
+Rezultati/A2-006/Varese/20231111/20231111_ech_a2-006_hv_f_data.txt (Razlika: 63.8 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20231112/20231112_ech_a2-006_hv_f_data.txt (Razlika: 70.9 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20231206/20231206_ech_a2-006_hv_f_data.txt (Razlika: 52.7 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20231206/20231206_ech_hr1222_1_hv_data.txt (Razlika: 25.0 km/s) | Razlog zavrnitve: Razmak 25.0 <= inst. 27.3
+Rezultati/A2-006/Varese/20231214/20231214_ech_a2-006_hv_f_data.txt (Razlika: 54.2 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20240111/20240111_ech_a2-006_hv_f_data.txt (Razlika: 54.3 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20240223/20240223_ech_hr1222_1_hv_f_data.txt (Razlika: 1.0 km/s) | Razlog zavrnitve: Razmak 1.0 <= inst. 27.3, Razmak 1.0 <= FWHM 49.8
+Rezultati/A2-006/Varese/20240313/20240313_ech_a2-006_hv_f_data.txt (Razlika: 55.9 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20240314/20240314_ech_hr1222_2_hv_f_data.txt (Razlika: 1.5 km/s) | Razlog zavrnitve: Razmak 1.5 <= inst. 27.3, Razmak 1.5 <= FWHM 49.8
+Rezultati/A2-006/Varese/20241027/20241027_ech_hr1222_2_hv_f_data.txt (Razlika: 2.6 km/s) | Razlog zavrnitve: Razmak 2.6 <= inst. 27.3, Razmak 2.6 <= FWHM 49.8
+Rezultati/A2-006/Varese/20241028/20241028_ech_a2-006_hv_f_data.txt (Razlika: 57.1 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20241029/20241029_ech_a2-006_hv_f_data.txt (Razlika: 59.4 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20241224/20241224_ech_a2-006_hv_f_data.txt (Razlika: 50.2 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20250113/20250113_ech_a2-006_hv_f_data.txt (Razlika: 55.7 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20250116/20250116_ech_a2-006_hv_f_data.txt (Razlika: 44.1 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20250202/20250202_ech_hr1222_1_hv_f_data.txt (Razlika: 45.2 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20250223/20250223_ech_hr1222_2_hv_f_data.txt (Razlika: 2.9 km/s) | Razlog zavrnitve: Razmak 2.9 <= inst. 27.3, Razmak 2.9 <= FWHM 49.8
+Rezultati/A2-006/Varese/20250308/20250308_ech_hr1222_2_hv_f_data.txt (Razlika: 84.5 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20250317/20250317_ech_a2-006_hv_f_data.txt (Razlika: 55.5 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20250319/20250308_ech_hr1222_2_hv_f_data.txt (Razlika: 84.5 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/A2-006/Varese/20250403/20250403_ech_hr1222_2_hv_f_data.txt (Razlika: 2.2 km/s) | Razlog zavrnitve: Razmak 2.2 <= inst. 27.3, Razmak 2.2 <= FWHM 49.8
+Rezultati/A2-006/Varese/20250410/20250410_ech_hr1222_2_hv_f_data.txt (Razlika: 1.6 km/s) | Razlog zavrnitve: Razmak 1.6 <= inst. 27.3, Razmak 1.6 <= FWHM 49.8
+Rezultati/a2-171/varese/20220702_ech_a2-171_hv_f_data.txt (Razlika: 30.1 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-171/varese/20230710_ech_a2-171_hv_f_data.txt (Razlika: 27.9 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-292/varese/20220912_ech_a2-292_hv_f_data.txt (Razlika: 52.3 km/s) | Razlog zavrnitve: Preozko b=0.10
+Rezultati/a2-292/varese/20230819_ech_a2-292_hv_f_data.txt (Razlika: 52.5 km/s) | Razlog zavrnitve: Preozko b=0.38
+Rezultati/a2-292/varese/20230926_ech_a2-292_hv_f_data.txt (Razlika: 22.7 km/s) | Razlog zavrnitve: Razmak 22.7 <= inst. 27.3

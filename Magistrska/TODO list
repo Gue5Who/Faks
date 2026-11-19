@@ -1,0 +1,27 @@
+1. nairisi plot vseh rezultatov (gaussovk) kak ti je gregor razlozo. na x osi so objekti na y so vsi spektri
+
+2. naredi voigta namesto gaussa pa daj moznosti za vec crt
+
+3. ne sme se skup zlit to reši
+
+4. dodaj širino voightov in pazi da je razsiritev pri obeh enakih crtah ista
+
+
+5. z sme najdi neke parametre tvoje zvezde ka dobis vredi SME in potem samo RV solvas. ka dobis povprečen spekter
+
+
+6. zemi dober SME spekter in pogledni ge je tan kontinuum orezi vse ka je pod 0.99 npr in te pogledni tvoje meritve in tisti X (valovno dolzino) ka neje odrezani bil gledamo na nasih podatkih pa tan fittamo nek polinom
+
+
+7. iz galah preveri RV ali pa iz Gaia prek topcata. to naj bo zacetna vrednost in se lejk spreminja negi za +-5km/s če de se fejn spremeno nede vredi
+
+
+#Bor
+
+Razširi temperature
+
+Pazi ka se dogaja z offsetton:  ali odstranis offset ali pa zemes offset pa tudi naklon sproti ali pa tudi dodas offset v samo normalizacijo ker offset ze vpliva na tvoj kontinuum če ga vkljucis prej
+
+Daj masko po prvi rundi rv-ja ka te dejansko z okoliskimi zvezdami dolocis brez natrijeve crte
+
+Pa masko kda delas normalizacijo v toj regiji

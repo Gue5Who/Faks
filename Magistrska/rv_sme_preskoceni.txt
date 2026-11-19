@@ -1,0 +1,1 @@
+Paper_II/A2-001/Varese/20241115_ech_a2-001_hv.fits	Echelle spekter z več redi (27, 740) - potrebuje 1D združitev (merge)
